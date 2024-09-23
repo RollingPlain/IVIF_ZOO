@@ -1,6 +1,6 @@
 # IVIF Survey: DacTa
 Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
-![点击统计](https://img.shields.io/badge/dynamic/json?label=访问次数&query=value&url=https://api.countapi.xyz/hit/your-username/your-repository)
+
 
 # Available Data
 # 红外和可见光图像融合(Infrared and visible image fusion)
