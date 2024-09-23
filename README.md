@@ -1,5 +1,13 @@
 # IVIF Survey: DacTa
 Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
+# 我的项目
+
+## 访问统计
+![访客统计](https://visitor-badge.glitch.me/badge?page_id=RollingPlain.IVIF_Survey)
+![点击统计](https://img.shields.io/badge/dynamic/json?label=访问次数&query=value&url=https://api.countapi.xyz/hit/RollingPlain/IVIF_Surveyy)
+
+## Star 数量
+![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_Survey?style=social)
 
 
 # Available Data
