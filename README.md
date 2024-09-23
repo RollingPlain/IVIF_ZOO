@@ -411,3 +411,95 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
         </tr>
     </tbody>
 </table>
+
+## 面向应用方法
+<table>
+    <thead>
+        <tr>
+            <th>Aspects</th>
+            <th>Methods</th>
+            <th>Caption</th>
+            <th>Venue</th>
+            <th>Source</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Perception</td>
+            <td>DetFusion</td>
+            <td>A detection-driven infrared and visible image fusion network</td>
+            <td>ACMMM ‘22</td>
+            <td><a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547902">Paper</a>/<a href="https://github.com/SunYM2020/DetFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>SeAFusion</td>
+            <td>Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network</td>
+            <td>InfFus ‘22</td>
+            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253521002542">Paper</a>/<a href="https://github.com/Linfeng-Tang/SeAFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>TarDAL</td>
+            <td>Target-aware dual adversarial learning and a multi-scenario multimodality benchmark to fuse infrared and visible for object detection</td>
+            <td>CVPR ‘22</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Target-Aware_Dual_Adversarial_Learning_and_a_Multi-Scenario_Multi-Modality_Benchmark_To_CVPR_2022_paper.html">Paper</a>/<a href="https://github.com/dlut-dimt/TarDAL">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>BDLFusion</td>
+            <td>Bi-level dynamic learning for jointly multi-modality image fusion and beyond</td>
+            <td>IJCAI ‘23</td>
+            <td><a href="https://arxiv.org/abs/2305.06720">Paper</a>/<a href="https://github.com/LiuZhu-CV/BDLFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>IRFS</td>
+            <td>An interactively reinforced paradigm for joint infrared-visible image fusion and saliency object detection</td>
+            <td>InfFus ‘23</td>
+            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253523001446">Paper</a>/<a href="https://github.com/wdhudiekou/IRFS">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>MetaFusion</td>
+            <td>Metafusion: Infrared and visible image fusion via meta-feature embedding from object detection</td>
+            <td>CVPR ‘23</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_MetaFusion_Infrared_and_Visible_Image_Fusion_via_Meta-Feature_Embedding_From_CVPR_2023_paper.html">Paper</a>/<a href="https://github.com/wdzhao123/MetaFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>MoE-Fusion</td>
+            <td>Multi-modal gated mixture of local-to-global experts for dynamic image fusion</td>
+            <td>ICCV ‘23</td>
+            <td><a href="https://openaccess.thecvf.com/content/ICCV2023/html/Cao_Multi-Modal_Gated_Mixture_of_Local-to-Global_Experts_for_Dynamic_Image_Fusion_ICCV_2023_paper.html">Paper</a>/<a href="https://github.com/SunYM2020/MoE-Fusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>SegMiF</td>
+            <td>Multi-interactive feature learning and a full-time multimodality benchmark for image fusion and segmentation</td>
+            <td>ICCV ‘23</td>
+            <td><a href="https://openaccess.thecvf.com/content/ICCV2023/html/Liu_Multi-interactive_Feature_Learning_and_a_Full-time_Multi-modality_Benchmark_for_Image_ICCV_2023_paper.html">Paper</a>/<a href="https://github.com/JinyuanLiu-CV/SegMiF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>CAF</td>
+            <td>Where elegance meets precision: Towards a compact, automatic, and flexible framework for multi-modality image fusion and applications</td>
+            <td>IJCAI ‘24</td>
+            <td><a href="https://www.ijcai.org/proceedings/2024/0123.pdf">Paper</a>/<a href="https://github.com/RollingPlain/CAF_IVIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>MRFS</td>
+            <td>Mrfs: Mutually reinforcing image fusion and segmentation</td>
+            <td>CVPR ‘24</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_MRFS_Mutually_Reinforcing_Image_Fusion_and_Segmentation_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/HaoZhang1018/MRFS">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>TIMFusion</td>
+            <td>A task-guided, implicitly searched and meta-initialized deep model for image fusion</td>
+            <td>TPAMI ‘24</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/10480582">Paper</a>/<a href="https://github.com/LiuZhu-CV/TIMFusion">Code</a></td>
+        </tr>
+    </tbody>
+</table>
