@@ -8,6 +8,12 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 ## Star 数量
 ![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_Survey?style=social)
 
+- [红外与可见光数据集 (Infrared and Visible Datasets)](#红外与可见光数据集infrared-and-visible-datasets)
+- [红外和可见光图像融合 (Infrared and Visible Image Fusion)](#红外和可见光图像融合infrared-and-visible-image-fusion)
+  - [纯融合方法 (Fusion for Visual Enhancement)](#纯融合方法fusion-for-visual-enhancement)
+  - [数据兼容方法 (Data Compatible)](#数据兼容方法data-compatible)
+  - [面向应用方法 (Application-oriented)](#面向应用方法application-oriented)
+
 # 红外与可见光数据集(Infrared and Visible Datasets)
 <table>
     <thead>
@@ -124,6 +130,27 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
     </tbody>
 </table>
 
+如果M3FD和FMB数据集对你有帮助，请引用以下论文：
+
+```
+@inproceedings{liu2022target,
+  title={Target-aware dual adversarial learning and a multi-scenario multi-modality benchmark to fuse infrared and visible for object detection},
+  author={Liu, Jinyuan and Fan, Xin and Huang, Zhanbo and Wu, Guanyao and Liu, Risheng and Zhong, Wei and Luo, Zhongxuan},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={5802--5811},
+  year={2022}
+}
+```
+
+```
+@inproceedings{liu2023multi,
+  title={Multi-interactive feature learning and a full-time multi-modality benchmark for image fusion and segmentation},
+  author={Liu, Jinyuan and Liu, Zhu and Wu, Guanyao and Ma, Long and Liu, Risheng and Zhong, Wei and Luo, Zhongxuan and Fan, Xin},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={8115--8124},
+  year={2023}
+}
+```
 
 # 红外和可见光图像融合(Infrared and visible image fusion)
 ## 纯融合方法(Fusion for Visual Enhancement)
