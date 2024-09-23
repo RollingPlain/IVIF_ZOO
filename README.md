@@ -11,6 +11,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 
 # Available Data
 # 红外和可见光图像融合(Infrared and visible image fusion)
+## 纯融合方法
 <table>
     <thead>
         <tr>
@@ -273,6 +274,140 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <td>Promptfusion: Harmonized semantic prompt learning for infrared and visible image fusion</td>
             <td>JAS '24</td>
             <td></td>
+        </tr>
+    </tbody>
+</table>
+
+## 数据兼容方法
+<table>
+            <thead>
+                <tr>
+                    <th>Aspects</th>
+                    <th>Methods</th>
+                    <th>Caption</th>
+                    <th>Venue</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+    <tbody>
+        <tr>
+            <td>Registration</td>
+            <td>UMIR</td>
+            <td>Unsupervised multi-modal image registration via geometry preserving image-to-image translation</td>
+            <td>CVPR ‘20</td>
+            <td><a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Arar_Unsupervised_Multi-Modal_Image_Registration_via_Geometry_Preserving_Image-to-Image_Translation_CVPR_2020_paper.html">Paper</a>/<a href="https://github.com/moabarar/nemar">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>ReCoNet</td>
+            <td>Reconet: Recurrent correction network for fast and efficient multi-modality image fusion</td>
+            <td>ECCV ‘22</td>
+            <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-19797-0_31">Paper</a>/<a href="https://github.com/dlut-dimt/ReCoNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>SuperFusion</td>
+            <td>Superfusion: A versatile image registration and fusion network with semantic awareness</td>
+            <td>JAS ‘22</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/9970457">Paper</a>/<a href="https://github.com/Linfeng-Tang/SuperFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>UMFusion</td>
+            <td>Unsupervised misaligned infrared and visible image fusion via cross-modality image generation and registration</td>
+            <td>IJCAI ‘22</td>
+            <td><a href="https://arxiv.org/abs/2205.11876">Paper</a>/<a href="https://github.com/wdhudiekou/UMF-CMGR">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>GCRF</td>
+            <td>General cross-modality registration framework for visible and infrared UAV target image registration</td>
+            <td>SR ‘23</td>
+            <td><a href="https://www.nature.com/articles/s41598-023-39863-3">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>MURF</td>
+            <td>MURF: mutually reinforcing multi-modal image registration and fusion</td>
+            <td>TPAMI ‘23</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/10145843">Paper</a>/<a href="https://github.com/hanna-xu/MURF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>SemLA</td>
+            <td>Semantics lead all: Towards unified image registration and fusion from a semantic perspective</td>
+            <td>InfFus ‘23</td>
+            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253523001513">Paper</a>/<a href="https://github.com/xiehousheng/SemLA">Code</a></td>
+        </tr>
+        <tr>
+            <td>Attack</td>
+            <td>PAIFusion</td>
+            <td>PAIF: Perception-aware infrared-visible image fusion for attack-tolerant semantic segmentation</td>
+            <td>ACMMM ‘23</td>
+            <td><a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611928">Paper</a>/<a href="https://github.com/LiuZhu-CV/PAIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>FusionDN</td>
+            <td>FusionDN: A unified densely connected network for image fusion</td>
+            <td>AAAI ‘20</td>
+            <td><a href="https://aaai.org/ojs/index.php/AAAI/article/view/6936">Paper</a>/<a href="https://github.com/hanna-xu/FusionDN">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>IFCNN</td>
+            <td>IFCNN: A general image fusion framework based on convolutional neural network</td>
+            <td>InfFus ‘20</td>
+            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253518305505">Paper</a>/<a href="https://github.com/uzeful/IFCNN">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>PMGI</td>
+            <td>Rethinking the image fusion: A fast unified image fusion network based on proportional maintenance of gradient and intensity</td>
+            <td>AAAI ‘20</td>
+            <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/6975">Paper</a>/<a href="https://github.com/HaoZhang1018/PMGI_AAAI2020">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>U2Fusion</td>
+            <td>U2Fusion: A unified unsupervised image fusion network</td>
+            <td>TPAMI ‘20</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/9151265">Paper</a>/<a href="https://github.com/hanna-xu/U2Fusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>SDNet</td>
+            <td>SDNet: A versatile squeeze-and-decomposition network for real-time image fusion</td>
+            <td>IJCV ‘21</td>
+            <td><a href="https://link.springer.com/article/10.1007/s11263-021-01501-8">Paper</a>/<a href="https://github.com/HaoZhang1018/SDNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>CoCoNet</td>
+            <td>CoCoNet: Coupled contrastive learning network with multi-level feature ensemble for multi-modality image fusion</td>
+            <td>IJCV ‘23</td>
+            <td><a href="https://link.springer.com/article/10.1007/s11263-023-01952-1">Paper</a>/<a href="https://github.com/runjia0124/CoCoNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>DDFM</td>
+            <td>DDFM: Denoising diffusion model for multi-modality image fusion</td>
+            <td>ICCV ‘23</td>
+            <td><a href="https://openaccess.thecvf.com/content/ICCV2023/html/Zhao_DDFM_Denoising_Diffusion_Model_for_Multi-Modality_Image_Fusion_ICCV_2023_paper.html">Paper</a>/<a href="https://github.com/Zhaozixiang1228/MMIF-DDFM">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>EMMA</td>
+            <td>Equivariant multi-modality image fusion</td>
+            <td>CVPR ‘24</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Equivariant_Multi-Modality_Image_Fusion_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/Zhaozixiang1228/MMIF-EMMA">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>FILM</td>
+            <td>Image fusion via vision-language model</td>
+            <td>ICML ‘24</td>
+            <td><a href="https://arxiv.org/abs/2402.02235">Paper</a>/<a href="https://github.com/Zhaozixiang1228/IF-FILM">Code</a></td>
         </tr>
     </tbody>
 </table>
