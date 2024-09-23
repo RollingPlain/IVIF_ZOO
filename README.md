@@ -8,10 +8,125 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 ## Star 数量
 ![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_Survey?style=social)
 
+# 红外与可见光数据集(Infrared and Visible Datasets)
+<table>
+    <thead>
+        <tr>
+            <th>Dataset</th>
+            <th>Img pairs</th>
+            <th>Resolution</th>
+            <th>Color</th>
+            <th>Camera angle</th>
+            <th>Nighttime</th>
+            <th>Objects/Categories</th>
+            <th>Challenge Scenes</th>
+            <th>Annotation</th>
+            <th>Dataset Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>TNO</td>
+            <td>261</td>
+            <td>768×576</td>
+            <td>❌</td>
+            <td>horizontal</td>
+            <td>65</td>
+            <td>few</td>
+            <td>✔</td>
+            <td>❌</td>
+            <td><a href="https://figshare.com/articles/dataset/TNO_Image_Fusion_Dataset/1008029">Link</a></td>
+        </tr>
+        <tr>
+            <td>RoadScene</td>
+            <td>221</td>
+            <td>Various</td>
+            <td>✔</td>
+            <td>driving</td>
+            <td>122</td>
+            <td>medium</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td><a href="https://github.com/hanna-xu/RoadScene">Link</a></td>
+        </tr>
+        <tr>
+            <td>VIFB</td>
+            <td>21</td>
+            <td>Various</td>
+            <td>Various</td>
+            <td>multiplication</td>
+            <td>10</td>
+            <td>few</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td><a href="https://github.com/xingchenzhang/Visible-infrared-image-fusion-benchmark">Link</a></td>
+        </tr>
+        <tr>
+            <td>MS</td>
+            <td>2999</td>
+            <td>768×576</td>
+            <td>✔</td>
+            <td>driving</td>
+            <td>1139</td>
+            <td>14146 / 6</td>
+            <td>❌</td>
+            <td>✔</td>
+            <td><a href="https://www.mi.t.u-tokyo.ac.jp/projects/mil_multispectral/index.html">Link</a></td>
+        </tr>
+        <tr>
+            <td>LLVIP</td>
+            <td>16836</td>
+            <td>1280×720</td>
+            <td>✔</td>
+            <td>surveillance</td>
+            <td>all</td>
+            <td>pedestrian / 1</td>
+            <td>❌</td>
+            <td>✔</td>
+            <td><a href="https://bupt-ai-cz.github.io/LLVIP/">Link</a></td>
+        </tr>
+        <tr>
+            <td>M3FD</td>
+            <td>4200</td>
+            <td>1024×768</td>
+            <td>✔</td>
+            <td>multiplication</td>
+            <td>1671</td>
+            <td>33603 / 6</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td><a href="https://github.com/JinyuanLiu-CV/TarDAL">Link</a></td>
+        </tr>
+        <tr>
+            <td>MFNet</td>
+            <td>1569</td>
+            <td>640×480</td>
+            <td>✔</td>
+            <td>driving</td>
+            <td>749</td>
+            <td>abundant / 8</td>
+            <td>❌</td>
+            <td>✔</td>
+            <td><a href="https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/">Link</a></td>
+        </tr>
+        <tr>
+            <td>FMB</td>
+            <td>1500</td>
+            <td>800×600</td>
+            <td>✔</td>
+            <td>multiplication</td>
+            <td>826</td>
+            <td>abundant / 14</td>
+            <td>❌</td>
+            <td>✔</td>
+            <td><a href="https://github.com/JinyuanLiu-CV/SegMiF">Link</a></td>
+        </tr>
+    </tbody>
+</table>
 
-# Available Data
+
 # 红外和可见光图像融合(Infrared and visible image fusion)
-## 纯融合方法
+## 纯融合方法(Fusion for Visual Enhancement)
 <table>
     <thead>
         <tr>
@@ -278,7 +393,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
     </tbody>
 </table>
 
-## 数据兼容方法
+## 数据兼容方法(Data Compatible)
 <table>
             <thead>
                 <tr>
@@ -412,7 +527,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
     </tbody>
 </table>
 
-## 面向应用方法
+## 面向应用方法(Application-oriented)
 <table>
     <thead>
         <tr>
