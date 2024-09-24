@@ -10,7 +10,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 ## 导航
 
 - [红外与可见光数据集 (Infrared and Visible Datasets)](#红外与可见光数据集infrared-and-visible-datasets)
-- [红外和可见光图像融合 (Infrared and Visible Image Fusion)](#红外和可见光图像融合infrared-and-visible-image-fusion)
+- [红外与可见光图像融合 (Infrared and Visible Image Fusion)](#红外与可见光图像融合infrared-and-visible-image-fusion)
   - [纯融合方法 (Fusion for Visual Enhancement)](#纯融合方法fusion-for-visual-enhancement)
   - [数据兼容方法 (Data Compatible)](#数据兼容方法data-compatible)
   - [面向应用方法 (Application-oriented)](#面向应用方法application-oriented)
@@ -137,7 +137,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
     </tbody>
 </table>
 
-如果M3FD和FMB数据集对你有帮助，请引用以下论文：
+If the M3FD and FMB datasets are helpful to you, please cite the following paper:
 
 ```
 @inproceedings{liu2022target,
@@ -159,7 +159,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 }
 ```
 
-# 红外和可见光图像融合(Infrared and visible image fusion)
+# 红外与可见光图像融合(Infrared and visible image fusion)
 ## 纯融合方法(Fusion for Visual Enhancement)
 <table>
     <thead>
@@ -654,6 +654,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 </table>
 
 #  评价指标(Evaluation Metric)
+The evaluation metrics used are located at:
 #  论文资源库(Resource Library of Papers)
 ##  融合(Fusion)
 <table>
@@ -727,3 +728,7 @@ We also provide the fusion results of the M3FD small version, which includes 300
 Download：[Baidu Yun](https://pan.baidu.com/s/15x8f8atQ1LGNyLo_iz69EA?pwd=mts4)
 ##  检测(Detection)
 ##  计算效率(Computational Efficiency)
+In this project, we use the `thop` library's `profile` function to calculate the model's FLOPs(G) and Params(M) count. 
+
+To measure the Time(ms)  of the model, we tested a random selection of 10 image sets from the M3FD dataset, each with a resolution of 1024×768, on the Nvidia GeForce 4090. To eliminate CPU influence, we employed CUDA's official event functions to measure running time on the GPU, excluding the initial run to compute the average.
+
