@@ -2,7 +2,7 @@
 Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 
 ## 访问统计
-![Clicks](https://img.shields.io/badge/clicks-0-blue)
+
 
 
 ## Star 数量
