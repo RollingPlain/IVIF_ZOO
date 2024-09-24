@@ -2,7 +2,8 @@
 Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 
 ## 访问统计
-![点击统计](https://img.shields.io/badge/dynamic/json?label=访问次数&query=value&url=https://api.countapi.xyz/hit/RollingPlain/IVIF_Survey)
+![Clicks](https://img.shields.io/badge/clicks-0-blue)
+
 
 ## Star 数量
 ![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_Survey?style=social)
