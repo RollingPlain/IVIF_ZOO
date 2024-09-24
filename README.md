@@ -8,11 +8,19 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 ## Star 数量
 ![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_Survey?style=social)
 
+## 导航
+
 - [红外与可见光数据集 (Infrared and Visible Datasets)](#红外与可见光数据集infrared-and-visible-datasets)
 - [红外和可见光图像融合 (Infrared and Visible Image Fusion)](#红外和可见光图像融合infrared-and-visible-image-fusion)
   - [纯融合方法 (Fusion for Visual Enhancement)](#纯融合方法fusion-for-visual-enhancement)
   - [数据兼容方法 (Data Compatible)](#数据兼容方法data-compatible)
   - [面向应用方法 (Application-oriented)](#面向应用方法application-oriented)
+- [评价指标 (Evaluation Metric)](#评价指标evaluation-metric)
+- [论文资源库 (Resource Library of Papers)](#论文资源库resource-library-of-papers)
+  - [融合 (Fusion)](#融合fusion)
+  - [分割 (Segmentation)](#分割segmentation)
+  - [检测 (Detection)](#检测detection)
+  - [计算效率 (Computational Efficiency)](#计算效率computational-efficiency)
 
 # 红外与可见光数据集(Infrared and Visible Datasets)
 <table>
@@ -645,3 +653,78 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
         </tr>
     </tbody>
 </table>
+
+#  评价指标(Evaluation Metric)
+#  论文资源库(Resource Library of Papers)
+##  融合(Fusion)
+<table>
+    <thead>
+        <tr>
+            <th>Dataset</th>
+            <th><strong>NUM</strong></th>
+            <th><strong>Filepath</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>TNO</td>
+            <td>57</td>
+            <td>/IVIF/TNO</td>
+        </tr>
+        <tr>
+            <td>RoadScene</td>
+            <td>221</td>
+            <td>/IVIF/RoadScene</td>
+        </tr>
+        <tr>
+            <td>M3FD</td>
+            <td>4200</td>
+            <td>/IVIF/M3FD_4200.zip</td>
+        </tr>
+        <tr>
+            <td>FMB</td>
+            <td>1500</td>
+            <td>/IVIF/</td>
+        </tr>
+    </tbody>
+</table>
+
+Download：[Link](https://pan.baidu.com/s/1S6l-CUqE2nRPXeX2P_VScg?pwd=wgtn)
+
+We also provide the fusion results of the M3FD small version, which includes 300 images, located in /IVIF/M3FD_300
+
+##  分割(Segmentation)
+<table>
+    <thead>
+        <tr>
+            <th><strong>Filepath</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/Segformer/datasets</td>
+            <td>Images used for segmentation</td>
+        </tr>
+        <tr>
+            <td>/Segformer/model_data</td>
+            <td>Backbone used for segmentation</td>
+        </tr>
+        <tr>
+            <td>/Segformer/predict</td>
+            <td>Visualization of segmentation</td>
+        </tr>
+        <tr>
+            <td>/Segformer/results</td>
+            <td>Saved model files and training results</td>
+        </tr>
+        <tr>
+            <td>/Segformer/hyperparameters.md</td>
+            <td>Hyperparameter settings</td>
+        </tr>
+    </tbody>
+</table>
+
+Download：[Link](https://pan.baidu.com/s/15x8f8atQ1LGNyLo_iz69EA?pwd=mts4)
+##  检测(Detection)
+##  计算效率(Computational Efficiency)
