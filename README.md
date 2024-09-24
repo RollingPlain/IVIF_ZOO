@@ -1,6 +1,5 @@
 # IVIF Survey: DacTa
 Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
-# 我的项目
 
 ## 访问统计
 ![点击统计](https://img.shields.io/badge/dynamic/json?label=访问次数&query=value&url=https://api.countapi.xyz/hit/RollingPlain/IVIF_Survey)
@@ -689,7 +688,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
     </tbody>
 </table>
 
-Download：[Link](https://pan.baidu.com/s/1S6l-CUqE2nRPXeX2P_VScg?pwd=wgtn)
+Download：[Baidu Yun](https://pan.baidu.com/s/1S6l-CUqE2nRPXeX2P_VScg?pwd=wgtn)
 
 We also provide the fusion results of the M3FD small version, which includes 300 images, located in /IVIF/M3FD_300
 
@@ -725,6 +724,6 @@ We also provide the fusion results of the M3FD small version, which includes 300
     </tbody>
 </table>
 
-Download：[Link](https://pan.baidu.com/s/15x8f8atQ1LGNyLo_iz69EA?pwd=mts4)
+Download：[Baidu Yun](https://pan.baidu.com/s/15x8f8atQ1LGNyLo_iz69EA?pwd=mts4)
 ##  检测(Detection)
 ##  计算效率(Computational Efficiency)
