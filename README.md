@@ -30,8 +30,6 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <th>Img pairs</th>
             <th>Resolution</th>
             <th>Color</th>
-            <th>Camera angle</th>
-            <th>Nighttime</th>
             <th>Objects/Categories</th>
             <th>Challenge Scenes</th>
             <th>Annotation</th>
@@ -44,20 +42,16 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <td>261</td>
             <td>768×576</td>
             <td>❌</td>
-            <td>horizontal</td>
-            <td>65</td>
             <td>few</td>
             <td>✔</td>
             <td>❌</td>
             <td><a href="https://figshare.com/articles/dataset/TNO_Image_Fusion_Dataset/1008029">Link</a></td>
         </tr>
         <tr>
-            <td>RoadScene</td>
+            <td>RoadScene 🔥</td>
             <td>221</td>
             <td>Various</td>
             <td>✔</td>
-            <td>driving</td>
-            <td>122</td>
             <td>medium</td>
             <td>❌</td>
             <td>❌</td>
@@ -68,8 +62,6 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <td>21</td>
             <td>Various</td>
             <td>Various</td>
-            <td>multiplication</td>
-            <td>10</td>
             <td>few</td>
             <td>❌</td>
             <td>❌</td>
@@ -80,8 +72,6 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <td>2999</td>
             <td>768×576</td>
             <td>✔</td>
-            <td>driving</td>
-            <td>1139</td>
             <td>14146 / 6</td>
             <td>❌</td>
             <td>✔</td>
@@ -92,20 +82,16 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <td>16836</td>
             <td>1280×720</td>
             <td>✔</td>
-            <td>surveillance</td>
-            <td>all</td>
             <td>pedestrian / 1</td>
             <td>❌</td>
             <td>✔</td>
             <td><a href="https://bupt-ai-cz.github.io/LLVIP/">Link</a></td>
         </tr>
         <tr>
-            <td>M3FD</td>
+            <td>M3FD 🔥</td>
             <td>4200</td>
             <td>1024×768</td>
             <td>✔</td>
-            <td>multiplication</td>
-            <td>1671</td>
             <td>33603 / 6</td>
             <td>✔</td>
             <td>✔</td>
@@ -116,20 +102,16 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <td>1569</td>
             <td>640×480</td>
             <td>✔</td>
-            <td>driving</td>
-            <td>749</td>
             <td>abundant / 8</td>
             <td>❌</td>
             <td>✔</td>
             <td><a href="https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/">Link</a></td>
         </tr>
         <tr>
-            <td>FMB</td>
+            <td>FMB 🔥</td>
             <td>1500</td>
             <td>800×600</td>
             <td>✔</td>
-            <td>multiplication</td>
-            <td>826</td>
             <td>abundant / 14</td>
             <td>❌</td>
             <td>✔</td>
@@ -137,6 +119,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
         </tr>
     </tbody>
 </table>
+
 
 If the M3FD and FMB datasets are helpful to you, please cite the following paper:
 
