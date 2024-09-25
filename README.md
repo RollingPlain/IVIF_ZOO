@@ -6,7 +6,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 
 
 ## Star 数量
-![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_Survey?style=social)
+![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_ZOO?style=social)
 
 ## 导航
 
@@ -30,10 +30,10 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <th>Img pairs</th>
             <th>Resolution</th>
             <th>Color</th>
-            <th>Objects/Categories</th>
-            <th>Challenge Scenes</th>
+            <th>Obj/Cats</th>
+            <th>Cha-Sc</th>
             <th>Annotation</th>
-            <th>Dataset Link</th>
+            <th>DS-Link</th>
         </tr>
     </thead>
     <tbody>
