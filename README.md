@@ -32,7 +32,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
             <th>Color</th>
             <th>Obj/Cats</th>
             <th>Cha-Sc</th>
-            <th>Annotation</th>
+            <th>Anno</th>
             <th>DS-Link</th>
         </tr>
     </thead>
