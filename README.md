@@ -1,10 +1,9 @@
 # IVIF Survey: DacTa
 Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 
-## 访问统计
+![PDF Preview](assets/sankey1.pdf)
 
-
-
+![preview](assets/pipeline1.pdf)
 ## Star 数量
 ![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_ZOO?style=social)
 
