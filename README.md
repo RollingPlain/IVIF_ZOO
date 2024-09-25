@@ -5,7 +5,7 @@ Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 A detailed spectrogram depicting almost all wavelength and frequency ranges, particularly expanding the range of the human visual system and
 annotating corresponding computer vision and image fusion datasets.
 
-![preview](assets/pipeline1.png)
+
 The diagram of infrared and visible image fusion for practical applications. Existing image fusion methods majorly focus on the design of architectures and training strategies for visual enhancement, few considering the adaptation for downstream visual perception tasks. Additionally, from the data compatibility perspective, pixel misalignment and adversarial attacks of image fusion are two major challenges. Additionally, integrating comprehensive semantic information for tasks like semantic segmentation, object detection, and salient object detection remains underexplored, posing a critical obstacle in image fusion.
 
 ![preview](assets/sankey1.png)
