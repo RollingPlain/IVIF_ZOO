@@ -654,7 +654,11 @@ Fusion images from multiple datasets in the IVIF domain are organized in the fol
 ```
 Fusion ROOT
 ├── IVIF
-|   ├── FMB 
+|   ├── FMB
+|   |   ├── ... 
+|   |   ├── CAF # All the file names are named after the methods
+|   |   └── ...
+|   ├── # The other files follow the same structure shown above.
 |   ├── M3FD_300 # Mini version of M3FD dataset with 300 images
 |   ├── RoadScene
 |   ├── TNO
@@ -672,10 +676,28 @@ Segmentation data is organized in the following form: it contains multiple direc
 ```
 Segmentation ROOT
 ├── Segformer
-|   ├── datasets #Images used for segmentation
-|   ├── model_data # Backbone used for segmentation
-|   ├── predict #Visualization of segmentation
-|   ├── results #Saved model files and training results
+|   ├── datasets
+|   |   ├── ... 
+|   |   ├── CAF # All the file names are named after the methods
+|   |   |    └──VOC2007
+|   |   |         ├── JPEGImages # Fusion result images in JPG format
+|   |   |         └── SegmentationClass # Ground truth for segmentation
+|   |   └── ... # The other files follow the same structure shown above.
+|   ├── model_data 
+|   |   ├── backbone # Backbone used for segmentation
+|   |   └── model # Saved model files
+|   |        ├── ...
+|   |        ├── CAF.pth # All the model names are named after the methods
+|   |        └── ... 
+|   ├── results # Saved model files and training results
+|   |   ├── iou # IoU results for segmentation validation
+|   |        ├── ...
+|   |        ├── CAF.txt # All the file names are named after the methods
+|   |        └── ... 
+|   |   └── predict #Visualization of segmentation
+|   |        ├── ...
+|   |        ├── CAF # All the file names are named after the methods
+|   |        └── ... 
 |   └── hyperparameters.md # Hyperparameter settings
 ```
 
