@@ -1,6 +1,8 @@
 # IVIF Survey: DacTa
 Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption
 
+Jinyuan Liu, Guanyao Wu, Zhu Liu, Di Wang, Zhiying Jiang, Long Ma, Wei Zhong, Xin Fan, Risheng Liu
+
 ![preview](assets/light2.png)
 A detailed spectrogram depicting almost all wavelength and frequency ranges, particularly expanding the range of the human visual system and
 annotating corresponding computer vision and image fusion datasets.
