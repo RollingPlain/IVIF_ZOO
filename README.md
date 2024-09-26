@@ -709,8 +709,7 @@ Download：[Baidu Yun](https://pan.baidu.com/s/1IZOZU17CA6-zeR8zb1LW3Q?pwd=5rcp)
 ##  计算效率(Computational Efficiency)
 - **FLOPS and Params**:
     - We utilize the `profile` function from the `thop` package to compute the FLOPs (G) and Params (M) counts of the model.
-
-   ```python
+```python
     from thop import profile
 
     # Create ir, vi input tensor
@@ -718,12 +717,12 @@ Download：[Baidu Yun](https://pan.baidu.com/s/1IZOZU17CA6-zeR8zb1LW3Q?pwd=5rcp)
     vi = torch.randn(1, 3, 1024, 768).to(device)
     # Assume 'model' is your network model
     flops, params = profile(model, inputs=(ir, vi))
-   ```
+ ```
 
 - **Time**:
     - To measure the Time (ms) of the model, we exclude the initial image to compute the average while testing a random selection of 10 image sets from the M3FD dataset, each with a resolution of 1024×768, on the Nvidia GeForce 4090. To eliminate CPU influence, we employ CUDA official event functions to measure running time on the GPU.
 
-   ```python
+```python
     import torch
   
     # Create CUDA events
@@ -736,5 +735,5 @@ Download：[Baidu Yun](https://pan.baidu.com/s/1IZOZU17CA6-zeR8zb1LW3Q?pwd=5rcp)
     fus = model(ir, vi)   
     # Record the end time
     end.record()
-   ```
+```
 
