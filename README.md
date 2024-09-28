@@ -646,7 +646,14 @@ If the M3FD and FMB datasets are helpful to you, please cite the following paper
 </table>
 
 #  评价指标(Evaluation Metric)
-The evaluation metrics used are located at:
+We integrated the code for calculating metrics and used GPU acceleration with PyTorch, significantly improving the speed of computing metrics across multiple methods and images.
+
+If you want to calculate metrics using our code, you can run:
+```python
+# Please modify the data path in 'eval_torch.py'.
+python eval_torch.py
+ ```
+
 #  论文资源库(Resource Library of Papers)
 ##  融合(Fusion)
 
@@ -710,30 +717,30 @@ Download：[Baidu Yun](https://pan.baidu.com/s/1IZOZU17CA6-zeR8zb1LW3Q?pwd=5rcp)
 - **FLOPS and Params**:
     - We utilize the `profile` function from the `thop` package to compute the FLOPs (G) and Params (M) counts of the model.
 ```python
-    from thop import profile
+from thop import profile
 
-    # Create ir, vi input tensor
-    ir = torch.randn(1, 1, 1024, 768).to(device)
-    vi = torch.randn(1, 3, 1024, 768).to(device)
-    # Assume 'model' is your network model
-    flops, params = profile(model, inputs=(ir, vi))
+# Create ir, vi input tensor
+ir = torch.randn(1, 1, 1024, 768).to(device)
+vi = torch.randn(1, 3, 1024, 768).to(device)
+# Assume 'model' is your network model
+flops, params = profile(model, inputs=(ir, vi))
  ```
 
 - **Time**:
     - To measure the Time (ms) of the model, we exclude the initial image to compute the average while testing a random selection of 10 image sets from the M3FD dataset, each with a resolution of 1024×768, on the Nvidia GeForce 4090. To eliminate CPU influence, we employ CUDA official event functions to measure running time on the GPU.
 
 ```python
-    import torch
+import torch
   
-    # Create CUDA events
-    start = torch.cuda.Event(enable_timing=True)
-    end = torch.cuda.Event(enable_timing=True)
-    # Record the start time
-    start.record()
-    # Execute the model
-    # Assume 'model' is your network model
-    fus = model(ir, vi)   
-    # Record the end time
-    end.record()
+# Create CUDA events
+start = torch.cuda.Event(enable_timing=True)
+end = torch.cuda.Event(enable_timing=True)
+# Record the start time
+start.record()
+# Execute the model
+# Assume 'model' is your network model
+fus = model(ir, vi)   
+# Record the end time
+end.record()
 ```
 
