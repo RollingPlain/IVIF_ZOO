@@ -140,7 +140,6 @@ if __name__ == '__main__':
                 filename_list.append(item)
                 eval_bar.set_description("{} | {}".format(Method, item))
 
-        # 计算均值并保存数据
         if with_mean:
             EN_tensor = torch.tensor(EN_list).mean().item()
             EN_list.append(EN_tensor)
@@ -186,7 +185,6 @@ if __name__ == '__main__':
         SSIM_list.insert(0, '{}'.format(Method))
         MS_SSIM_list.insert(0, '{}'.format(Method))
 
-        # 保存到Excel文件
         if i == start_index:
             write_excel(metric_save_name, 'EN', 0, filename_list)
             write_excel(metric_save_name, "MI", 0, filename_list)
