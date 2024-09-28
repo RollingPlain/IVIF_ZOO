@@ -14,26 +14,11 @@ def sobel_fn(x):
     gh = np.zeros((p - 2, q - 2))
     gv = convolve2d(x_ext, vtemp, mode='valid')
     gh = convolve2d(x_ext, htemp, mode='valid')
-    # for ii in range(1, p - 1):
-    #     for jj in range(1, q - 1):
-    #         gv[ii - 1, jj - 1] = np.sum(x_ext[ii - 1:ii + 2, jj - 1:jj + 2] * vtemp)
-    #         gh[ii - 1, jj - 1] = np.sum(x_ext[ii - 1:ii + 2, jj - 1:jj + 2] * htemp)
 
     return gv, gh
 
 
 def per_extn_im_fn(x, wsize):
-    """
-    Periodic extension of the given image in 4 directions.
-
-    xout_ext = per_extn_im_fn(x, wsize)
-
-    Periodic extension by (wsize-1)/2 on all 4 sides.
-    wsize should be odd.
-
-    Example:
-        Y = per_extn_im_fn(X, 5);    % Periodically extends 2 rows and 2 columns in all sides.
-    """
 
     hwsize = (wsize - 1) // 2  # Half window size excluding centre pixel.
 
