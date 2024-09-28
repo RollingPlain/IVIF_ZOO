@@ -8,38 +8,31 @@ import torch.nn.functional as F
 from ssim import ssim, ms_ssim
 
 def EN_function(image_tensor):
-    # 计算直方图
     histogram = torch.histc(image_tensor, bins=256, min=0, max=255)
-    # 归一化直方图
     histogram = histogram / histogram.sum()
-    # 计算熵
     entropy = -torch.sum(histogram * torch.log2(histogram + 1e-7))
     return entropy
 
 
 def SF_function(image_tensor):
 
-    # 计算行差分和列差分
     RF = image_tensor[1:, :] - image_tensor[:-1, :]
     CF = image_tensor[:, 1:] - image_tensor[:, :-1]
 
-    # 计算均值平方根
     RF1 = torch.sqrt(torch.mean(RF ** 2))
     CF1 = torch.sqrt(torch.mean(CF ** 2))
 
-    # 计算 SF
     SF = torch.sqrt(RF1 ** 2 + CF1 ** 2)
     return SF
 
 
 def SD_function(image_tensor):
     m, n = image_tensor.shape
-    u = torch.mean(image_tensor)  # 计算均值
-    SD = torch.sqrt(torch.sum((image_tensor - u) ** 2) / (m * n))  # 计算标准差
+    u = torch.mean(image_tensor)  
+    SD = torch.sqrt(torch.sum((image_tensor - u) ** 2) / (m * n))  
     return SD
 
 def PSNR_function(A, B, F):
-    # 确保输入是浮点数张量并在 GPU 上
     A = A.float() / 255.0
     B = B.float() / 255.0
     F = F.float() / 255.0
@@ -55,7 +48,6 @@ def PSNR_function(A, B, F):
 
 
 def MSE_function(A, B, F):
-    # 确保输入是浮点数张量并在 GPU 上
     A = A.float() / 255.0
     B = B.float() / 255.0
     F = F.float() / 255.0
@@ -68,9 +60,7 @@ def MSE_function(A, B, F):
     return MSE
 
 def fspecial_gaussian(shape, sigma):
-    """
-    2D gaussian mask - should give the same result as MATLAB's fspecial('gaussian',...)
-    """
+
     m, n = [(ss-1.)/2. for ss in shape]
     y, x = np.ogrid[-m:m+1, -n:n+1]
     h = np.exp(-(x*x + y*y) / (2.*sigma*sigma))
@@ -204,12 +194,9 @@ def MI_function(A, B, F, gray_level=256):
 
 
 def AG_function(image_tensor):
-    # 计算梯度
-    grady, gradx = torch.gradient(image_tensor)
-    # 计算梯度的平方和
-    s = torch.sqrt((gradx ** 2 + grady ** 2) / 2)
 
-    # 计算平均梯度
+    grady, gradx = torch.gradient(image_tensor)
+    s = torch.sqrt((gradx ** 2 + grady ** 2) / 2)
     AG = torch.sum(s) / (image_tensor.shape[0] * image_tensor.shape[1])
     return AG
 
