@@ -7,13 +7,7 @@ import torchvision.transforms.functional as TF
 import numpy as np
 
 def _fspecial_gauss_1d(size, sigma):
-    r"""Create 1-D gauss kernel
-    Args:
-        size (int): the size of gauss kernel
-        sigma (float): sigma of normal distribution
-    Returns:
-        torch.Tensor: 1D kernel (1 x 1 x size)
-    """
+
     coords = torch.arange(size, dtype=torch.float32)
     coords -= size // 2
 
@@ -24,13 +18,7 @@ def _fspecial_gauss_1d(size, sigma):
 
 
 def gaussian_filter(input, win):
-    r""" Blur input with 1-D kernel
-    Args:
-        input (torch.Tensor): a batch of tensors to be blurred
-        window (torch.Tensor): 1-D gauss kernel
-    Returns:
-        torch.Tensor: blurred tensors
-    """
+
     assert all([ws == 1 for ws in win.shape[1:-1]]), win.shape
     if len(input.shape) == 4:
         conv = F.conv2d
@@ -57,7 +45,7 @@ def gaussian_filter(input, win):
 
 def _ssim(X, Y, data_range, win, K=(0.01, 0.03)):
     K1, K2 = K
-    # batch, channel, [depth,] height, width = X.shape
+
     compensation = 1.0
 
     C1 = (K1 * data_range) ** 2
@@ -92,8 +80,7 @@ def ssim(X,
          win=None,
          K=(0.01, 0.03),
          nonnegative_ssim=False):
-    # 输出的是灰度图像，其shape是[H, W]
-    # 需要扩展为 [B, C, H, W]
+
     X = TF.to_tensor(X).unsqueeze(0).unsqueeze(0) * 255.0
     Y = TF.to_tensor(Y).unsqueeze(0).unsqueeze(0) * 255.0
     if not X.shape == Y.shape:
@@ -140,8 +127,7 @@ def ms_ssim(
         weights=None,
         K=(0.01, 0.03)
     ):
-    # 输出的是灰度图像，其shape是[H, W]
-    # 需要扩展为 [B, C, H, W]
+
     X = TF.to_tensor(X).unsqueeze(0).unsqueeze(0) * 255.0
     Y = TF.to_tensor(Y).unsqueeze(0).unsqueeze(0) * 255.0
     if not X.shape == Y.shape:
