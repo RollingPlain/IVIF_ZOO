@@ -38,7 +38,7 @@ The diagram of infrared and visible image fusion for practical applications. Exi
             <th>Obj/Cats</th>
             <th>Cha-Sc</th>
             <th>Anno</th>
-            <th>DS-Link</th>
+            <th>DownLoad</th>
         </tr>
     </thead>
     <tbody>
