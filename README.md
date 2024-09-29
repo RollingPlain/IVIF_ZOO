@@ -1,5 +1,7 @@
 # IVIF Zoo
-Welcome to IVIF Zoo, a comprehensive repository dedicated to Infrared and Visible Image Fusion (IVIF). Based on our survey paper [Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption. Jinyuan Liu, Guanyao Wu, Zhu Liu, Di Wang, Zhiying Jiang, Long Ma, Wei Zhong, Xin Fan, Risheng Liu*], this repository aims to serve as a central hub for researchers, engineers, and enthusiasts in the field of IVIF. Here, you'll find a wide array of resources, tools, and datasets, curated to accelerate advancements and foster collaboration in infrared-visible image fusion technologies.
+Welcome to IVIF Zoo, a comprehensive repository dedicated to Infrared and Visible Image Fusion (IVIF). Based on our survey paper [__Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption.__ *Jinyuan Liu, Guanyao Wu, Zhu Liu, Di Wang, Zhiying Jiang, Long Ma, Wei Zhong, Xin Fan, Risheng Liu**], this repository aims to serve as a central hub for researchers, engineers, and enthusiasts in the field of IVIF. Here, you'll find a wide array of resources, tools, and datasets, curated to accelerate advancements and foster collaboration in infrared-visible image fusion technologies.
+
+***
 
 ![preview](assets/light2.png)
 <sub>A detailed spectrogram depicting almost all wavelength and frequency ranges, particularly expanding the range of the human visual system and annotating corresponding computer vision and image fusion datasets.</sub>
@@ -10,8 +12,7 @@ The diagram of infrared and visible image fusion for practical applications. Exi
 ![preview](assets/sankey1.png)
  A classification sankey diagram containing typical fusion methods.
 
-## Star 数量
-![GitHub stars](https://img.shields.io/github/stars/RollingPlain/IVIF_ZOO?style=social)
+***
 
 ## 导航
 
@@ -93,7 +94,7 @@ The diagram of infrared and visible image fusion for practical applications. Exi
             <td><a href="https://bupt-ai-cz.github.io/LLVIP/">Link</a></td>
         </tr>
         <tr>
-            <td>M3FD 🔥</td>
+            <td>M<sup>3</sup>FD 🔥</td>
             <td>4200</td>
             <td>1024×768</td>
             <td>✔</td>
@@ -126,7 +127,7 @@ The diagram of infrared and visible image fusion for practical applications. Exi
 </table>
 
 
-If the M3FD and FMB datasets are helpful to you, please cite the following paper:
+If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the following paper:
 
 ```
 @inproceedings{liu2022target,
