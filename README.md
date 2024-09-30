@@ -154,11 +154,11 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
 <table>
     <thead>
         <tr>
-            <th>Aspects</th>
-            <th>Methods</th>
-            <th>Caption</th>
-            <th>Venue</th>
-            <th>Source</th>
+            <th>Aspects(类型)</th>
+            <th>Methods(方法)</th>
+            <th>Title(标题)</th>
+            <th>Venue(期刊)</th>
+            <th>Source(资源)</th>
         </tr>
     </thead>
     <tbody>
@@ -421,11 +421,11 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
 <table>
             <thead>
                 <tr>
-                    <th>Aspects</th>
-                    <th>Methods</th>
-                    <th>Caption</th>
-                    <th>Venue</th>
-                    <th>Source</th>
+            <th>Aspects(类型)</th>
+            <th>Methods(方法)</th>
+            <th>Title(标题)</th>
+            <th>Venue(期刊)</th>
+            <th>Source(资源)</th>
                 </tr>
             </thead>
     <tbody>
@@ -555,11 +555,11 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
 <table>
     <thead>
         <tr>
-            <th>Aspects</th>
-            <th>Methods</th>
-            <th>Caption</th>
-            <th>Venue</th>
-            <th>Source</th>
+            <th>Aspects(类型)</th>
+            <th>Methods(方法)</th>
+            <th>Title(标题)</th>
+            <th>Venue(期刊)</th>
+            <th>Source(资源)</th>
         </tr>
     </thead>
     <tbody>
@@ -711,6 +711,7 @@ You can directly download from here.
 Download：[Baidu Yun](https://pan.baidu.com/s/1IZOZU17CA6-zeR8zb1LW3Q?pwd=5rcp)
 
 ##  检测(Detection)
+Detection data will be uploaded later.
 ##  计算效率(Computational Efficiency)
 - **FLOPS and Params**:
     - We utilize the `profile` function from the `thop` package to compute the FLOPs (G) and Params (M) counts of the model.
