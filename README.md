@@ -645,7 +645,7 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
 
 #  评价指标(Evaluation Metric)
 We integrated the code for calculating metrics and used GPU acceleration with PyTorch, significantly improving the speed of computing metrics across multiple methods and images.
-You can find it at [Metric](https://github.com/RollingPlain/IVIF_ZOO/tree/main/Metric).    More evaluation metric code will be uploaded later.
+You can find it at [Metric](https://github.com/RollingPlain/IVIF_ZOO/tree/main/Metric)
 
 If you want to calculate metrics using our code, you can run:
 ```python
