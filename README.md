@@ -713,6 +713,7 @@ Download：[Baidu Yun](https://pan.baidu.com/s/1IZOZU17CA6-zeR8zb1LW3Q?pwd=5rcp)
 
 ##  检测(Detection)
 Detection data will be uploaded later.
+Download：[Link]()
 ##  计算效率(Computational Efficiency)
 - **FLOPS and Params**:
     - We utilize the `profile` function from the `thop` package to compute the FLOPs (G) and Params (M) counts of the model.
