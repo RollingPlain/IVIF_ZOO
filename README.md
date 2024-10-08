@@ -712,8 +712,34 @@ You can directly download from here.
 Download：[Baidu Yun](https://pan.baidu.com/s/1IZOZU17CA6-zeR8zb1LW3Q?pwd=5rcp)
 
 ##  检测(Detection)
-Detection data will be uploaded later.
-Download：[Link]()
+Detection data is organized in the following form:
+it contains multiple directories to facilitate the management of detection-related data and results.
+
+```
+Detection ROOT
+├── M3FD
+|   ├── Fused Results
+|   |   ├── ... 
+|   |   ├── CAF # All the file names are named after the methods
+|   |   |   ├── Images # Fusion result images in PNG format
+|   |   |   └── Labels # Ground truth for detection
+|   |   └── ... # The other files follow the same structure shown above.
+|   ├── model_data 
+|   |   └── model # Saved model files
+|   |        ├── ...
+|   |        ├── CAF.pth # All the model names are named after the methods
+|   |        └── ... 
+|   ├── results # Saved model files and training results
+|   |   └── predict #Visualization of detection
+|   |        ├── ...
+|   |        ├── CAF # All the file names are named after the methods
+|   |        └── ... 
+|   └── hyperparameters.md # Hyperparameter settings
+```
+
+You can directly download from here.
+
+Download：[Baidu Yun]()
 ##  计算效率(Computational Efficiency)
 - **FLOPS and Params**:
     - We utilize the `profile` function from the `thop` package to compute the FLOPs (G) and Params (M) counts of the model.
