@@ -739,7 +739,7 @@ Detection ROOT
 
 You can directly download from here.
 
-Download：[Baidu Yun]()
+Download：[Baidu Yun](https://pan.baidu.com/s/1mC3wTM1DjbBz5mIaDYJLDQ?pwd=a36k)
 ##  计算效率(Computational Efficiency)
 - **FLOPS and Params**:
     - We utilize the `profile` function from the `thop` package to compute the FLOPs (G) and Params (M) counts of the model.
