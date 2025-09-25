@@ -76,8 +76,8 @@ def ssim(X,
          win=None,
          K=(0.01, 0.03),
          nonnegative_ssim=False):
-    X = TF.to_tensor(X).unsqueeze(0).unsqueeze(0) * 255.0
-    Y = TF.to_tensor(Y).unsqueeze(0).unsqueeze(0) * 255.0
+    X = TF.to_tensor(X).unsqueeze(0).unsqueeze(0)
+    Y = TF.to_tensor(Y).unsqueeze(0).unsqueeze(0)
     if not X.shape == Y.shape:
         raise ValueError("Input images should have the same dimensions.")
 
@@ -122,8 +122,8 @@ def ms_ssim(
         weights=None,
         K=(0.01, 0.03)
     ):
-    X = TF.to_tensor(X).unsqueeze(0).unsqueeze(0) * 255.0
-    Y = TF.to_tensor(Y).unsqueeze(0).unsqueeze(0) * 255.0
+    X = TF.to_tensor(X).unsqueeze(0).unsqueeze(0)
+    Y = TF.to_tensor(Y).unsqueeze(0).unsqueeze(0)
     if not X.shape == Y.shape:
         raise ValueError("Input images should have the same dimensions.")
 
@@ -241,4 +241,5 @@ class MS_SSIM(nn.Module):
             win=self.win,
             weights=self.weights,
             K=self.K,
+
         ).item()
