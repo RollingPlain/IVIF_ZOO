@@ -295,13 +295,13 @@ def AG_function(image_tensor):
 def SSIM_function(A, B, F):
     ssim_A = ssim(A, F)
     ssim_B = ssim(B, F)
-    SSIM = 1 * ssim_A + 1 * ssim_B
+    SSIM = (ssim_A + 1 * ssim_B) / 2
     return SSIM.item()
 
 def MS_SSIM_function(A, B, F):
     ssim_A = ms_ssim(A, F)
     ssim_B = ms_ssim(B, F)
-    MS_SSIM = 1 * ssim_A + 1 * ssim_B
+    MS_SSIM = (ssim_A + 1 * ssim_B) / 2
     return MS_SSIM.item()
 
 def Nabf_function(A, B, F):
@@ -411,3 +411,4 @@ def Qcb_function(ir_img_tensor, vi_img_tensor, f_img_tensor):
     Qcb = Q.mean().item()
 
     return Qcb
+
