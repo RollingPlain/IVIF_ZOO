@@ -157,7 +157,7 @@ The diagram of infrared and visible image fusion for practical applications. Exi
         <tr>
             <td>HDO</td>
             <td>24</td>
-            <td>7500</td>
+            <td>7,500</td>
             <td>640×480</td>
             <td><a href="https://github.com/xiehousheng/HDO">Link</a></td>
         </tr>
