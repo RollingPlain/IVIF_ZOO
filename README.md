@@ -2,6 +2,7 @@
 ## Latest News 🔥🔥
 [2024-12-12] Our survey paper [__Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption.__] has been accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence!
 ([Paper](https://ieeexplore.ieee.org/abstract/document/10812907))([中文版](https://pan.baidu.com/s/1EIRYSULa-pd2FRmIdG693g?pwd=aiey))
+
 [2026-04-15] We have updated the repository with state-of-the-art methods for both image fusion and video fusion.
 
 # IVIF Zoo
