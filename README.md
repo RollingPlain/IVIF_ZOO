@@ -34,6 +34,7 @@ The diagram of infrared and visible image fusion for practical applications. Exi
   - 🔍[检测 (Detection)](#检测detection) `Based on YOLO-v5`
   - [计算效率 (Computational Efficiency)](#计算效率computational-efficiency)
 # 数据集(Datasets)
+## 图像数据集（Image Datasets）
 <table>
     <thead>
         <tr>
@@ -127,6 +128,47 @@ The diagram of infrared and visible image fusion for practical applications. Exi
             <td>❌</td>
             <td>✔</td>
             <td><a href="https://github.com/JinyuanLiu-CV/SegMiF">Link</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## 视频数据集（Video Datasets）
+
+<table>
+    <thead>
+        <tr>
+            <th>Dataset</th>
+            <th>Video Count</th>
+            <th>Total Frames</th>
+            <th>Resolution</th>
+            <th>DownLoad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>VF-Bench</td>
+            <td>797</td>
+            <td>Over 200,000</td>
+            <td>2K/540p/480p</td>
+            <td><a href="https://share.phys.ethz.ch/~pf/zixiangdata/vfbench/">Link</a></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>HDO</td>
+            <td>24</td>
+            <td>7500</td>
+            <td>640×480</td>
+            <td><a href="https://github.com/xiehousheng/HDO">Link</a></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>M3SVD</td>
+            <td>220</td>
+            <td>153,797</td>
+            <td>640×480</td>
+            <td><a href="https://github.com/Linfeng-Tang/M3SVD">Link</a></td>
         </tr>
     </tbody>
 </table>
