@@ -2,6 +2,7 @@
 ## Latest News 🔥🔥
 [2024-12-12] Our survey paper [__Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption.__] has been accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence!
 ([Paper](https://ieeexplore.ieee.org/abstract/document/10812907))([中文版](https://pan.baidu.com/s/1EIRYSULa-pd2FRmIdG693g?pwd=aiey))
+[2026-04-15] We have updated the repository with state-of-the-art methods for both image fusion and video fusion.
 
 # IVIF Zoo
 Welcome to IVIF Zoo, a comprehensive repository dedicated to Infrared and Visible Image Fusion (IVIF). Based on our survey paper [__Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption.__ *Jinyuan Liu, Guanyao Wu, Zhu Liu, Di Wang, Zhiying Jiang, Long Ma, Wei Zhong, Xin Fan, Risheng Liu**], this repository aims to serve as a central hub for researchers, engineers, and enthusiasts in the field of IVIF. Here, you'll find a wide array of resources, tools, and datasets, curated to accelerate advancements and foster collaboration in infrared-visible image fusion technologies.
