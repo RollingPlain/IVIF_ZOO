@@ -877,7 +877,7 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
 
 
 
-# 最新研究进展(Latest Research Rrogress)
+# 最新研究进展(Latest Research Progress)
 <table>
     <thead>
         <tr>
@@ -1096,7 +1096,7 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
        <tr>
             <td>CMVF</td>
             <td>CMVF: Cross-modal unregistered video fusion via spatio-temporal consistency</td>
-            <td>IF '26</td>
+            <td>InfFus '26</td>
             <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253526000916">Paper</a>/<a href="https://github.com/jianfeng0369/CMVF">Code</a></td>
         </tr>
         <tr>
