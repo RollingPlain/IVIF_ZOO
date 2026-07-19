@@ -252,7 +252,7 @@ def Hab(im1, im2, gray_level):
 			H_x = H_x + im1_marg[i] * math.log2(im1_marg[i])
 	for i in range(N):
 		if (im2_marg[i] != 0):
-			H_x = H_x + im2_marg[i] * math.log2(im2_marg[i])
+			H_y = H_y + im2_marg[i] * math.log2(im2_marg[i])
 	H_xy = 0
 	for i in range(N):
 		for j in range(N):
