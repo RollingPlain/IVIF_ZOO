@@ -3,7 +3,7 @@
 [2024-12-12] Our survey paper [__Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption.__] has been accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence!
 ([Paper](https://ieeexplore.ieee.org/abstract/document/10812907))([中文版](https://pan.baidu.com/s/1EIRYSULa-pd2FRmIdG693g?pwd=aiey))
 
-[2026-04-15] We have updated the repository with state-of-the-art methods for both Image Fusion and Video Fusion.
+[2026-09-23] We have updated the repository with state-of-the-art methods for both Image Fusion and Video Fusion.
 
 # IVIF Zoo
 Welcome to IVIF Zoo, a comprehensive repository dedicated to Infrared and Visible Image Fusion (IVIF). Based on our survey paper [__Infrared and Visible Image Fusion: From Data Compatibility to Task Adaption.__ *Jinyuan Liu, Guanyao Wu, Zhu Liu, Di Wang, Zhiying Jiang, Long Ma, Wei Zhong, Xin Fan, Risheng Liu**], this repository aims to serve as a central hub for researchers, engineers, and enthusiasts in the field of IVIF. Here, you'll find a wide array of resources, tools, and datasets, curated to accelerate advancements and foster collaboration in infrared-visible image fusion technologies.
@@ -28,6 +28,8 @@ The diagram of infrared and visible image fusion for practical applications. Exi
   - [纯融合方法 (Fusion for Visual Enhancement)](#纯融合方法fusion-for-visual-enhancement)
   - [数据兼容方法 (Data Compatible)](#数据兼容方法data-compatible)
   - [面向应用方法 (Application-oriented)](#面向应用方法application-oriented)
+- [最新研究进展 (Latest Research Progress)](#最新研究进展latest-research-progress)
+- [视频融合 (Video Fusion)](#视频融合video-fusion)
 - [评价指标 (Evaluation Metric)](#评价指标evaluation-metric)
 ###  [🔥🚀资源库 (Resource Library)](#资源库resource-library)  
 `It covers all results of our survey paper, available for download from Baidu Cloud.`
@@ -220,17 +222,17 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Auto-Encoder</td>
-            <td>SEDRFuse</td>
-            <td>Sedrfuse: A symmetric encoder–decoder with residual block network for infrared and visible image fusion</td>
-            <td>TIM '20</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/9187663/">Paper</a>/<a href="https://github.com/jianlihua123/SEDRFuse">Code</a></td>
-        </tr>
-        <tr>
-            <td>Auto-Encoder</td>
             <td>DIDFuse</td>
             <td>Didfuse: Deep image decomposition for infrared and visible image fusion</td>
             <td>IJCAI '20</td>
             <td><a href="https://arxiv.org/abs/2003.09210">Paper</a>/<a href="https://github.com/Zhaozixiang1228/IVIF-DIDFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>Auto-Encoder</td>
+            <td>SEDRFuse</td>
+            <td>Sedrfuse: A symmetric encoder–decoder with residual block network for infrared and visible image fusion</td>
+            <td>TIM '20</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/9187663/">Paper</a>/<a href="https://github.com/jianlihua123/SEDRFuse">Code</a></td>
         </tr>
         <tr>
             <td>Auto-Encoder</td>
@@ -267,26 +269,26 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>TIM '22</td>
             <td><a href="https://ieeexplore.ieee.org/abstract/document/9670874/">Paper</a>/<a href="https://github.com/Zhishe-Wang/Res2Fusion">Code</a></td>
         </tr>
-             <tr>
-        <td>Auto-Encoder</td>
-        <td>RPFNet</td>
-        <td>Residual Prior-driven Frequency-aware Network for Image Fusion</td>
-        <td>ACM MM '25</td>
-        <td><a href="https://arxiv.org/abs/2507.06735">Paper</a>/<a href="https://github.com/wang-x-1997/RPFNet">Code</a></td>
-    </tr>
-    <tr>
-        <td>Auto-Encoder</td>
-        <td>TTD</td>
-        <td>Test-Time Dynamic Image Fusion</td>
-        <td>NeurIPS '24</td>
-        <td><a href="https://nips.cc/virtual/2024/poster/95415">Paper</a>/<a href="https://github.com/Yinan-Xia/TTD">Code</a></td>
-    </tr>
         <tr>
-            <td>GAN</td>
-            <td>FusionGAN</td>
-            <td>Fusiongan: A generative adversarial network for infrared and visible image fusion</td>
-            <td>InfFus '19</td>
-            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253518301143">Paper</a>/<a href="https://github.com/jiayi-ma/FusionGAN">Code</a></td>
+            <td>Auto-Encoder</td>
+            <td>TTD</td>
+            <td>Test-Time Dynamic Image Fusion</td>
+            <td>NeurIPS '24</td>
+            <td><a href="https://nips.cc/virtual/2024/poster/95415">Paper</a>/<a href="https://github.com/Yinan-Xia/TTD">Code</a></td>
+        </tr>
+        <tr>
+            <td>Auto-Encoder</td>
+            <td>RPFNet</td>
+            <td>Residual Prior-driven Frequency-aware Network for Image Fusion</td>
+            <td>ACM MM '25</td>
+            <td><a href="https://arxiv.org/abs/2507.06735">Paper</a>/<a href="https://github.com/wang-x-1997/RPFNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>Auto-Encoder</td>
+            <td>MAFS</td>
+            <td>MAFS: Masked Autoencoder for Infrared-Visible Image Fusion and Semantic Segmentation</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3611602">Paper</a>/<a href="https://github.com/Abraham-Einstein/MAFS">Code</a></td>
         </tr>
         <tr>
             <td>GAN</td>
@@ -297,6 +299,13 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>GAN</td>
+            <td>FusionGAN</td>
+            <td>Fusiongan: A generative adversarial network for infrared and visible image fusion</td>
+            <td>InfFus '19</td>
+            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253518301143">Paper</a>/<a href="https://github.com/jiayi-ma/FusionGAN">Code</a></td>
+        </tr>
+        <tr>
+            <td>GAN</td>
             <td>AtFGAN</td>
             <td>Attentionfgan: Infrared and visible image fusion using attention-based generative adversarial networks</td>
             <td>TMM '20</td>
@@ -304,17 +313,17 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>GAN</td>
-            <td>DPAL</td>
-            <td>Infrared and visible image fusion via detail preserving adversarial learning</td>
-            <td>InfFus '20</td>
-            <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253519300314">Paper</a>/<a href="https://github.com/StaRainJ/ResNetFusion">Code</a></td>
-        </tr>
-        <tr>
-            <td>GAN</td>
             <td>D2WGAN</td>
             <td>Infrared and visible image fusion using dual discriminators generative adversarial networks with wasserstein distance</td>
             <td>InfSci '20</td>
             <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025520303431">Paper</a></td>
+        </tr>
+        <tr>
+            <td>GAN</td>
+            <td>DPAL</td>
+            <td>Infrared and visible image fusion via detail preserving adversarial learning</td>
+            <td>InfFus '20</td>
+            <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253519300314">Paper</a>/<a href="https://github.com/StaRainJ/ResNetFusion">Code</a></td>
         </tr>
         <tr>
             <td>GAN</td>
@@ -332,18 +341,31 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>GAN</td>
+            <td>DCFusion</td>
+            <td>DCFusion: A Dual-Frequency Cross-Enhanced Fusion Network for Infrared and Visible Image Fusion</td>
+            <td>TIM '23</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/10102546">Paper</a></td>
+        </tr>
+        <tr>
+            <td>GAN</td>
             <td>TCGAN</td>
             <td>Transformer based conditional gan for multimodal image fusion</td>
             <td>TMM '23</td>
             <td><a href="https://ieeexplore.ieee.org/abstract/document/10041783/">Paper</a>/<a href="https://github.com/jinxiqinghuan/TCGAN">Code</a></td>
         </tr>
         <tr>
+            <td>GAN</td>
+            <td>DDBF</td>
+            <td>Dispel Darkness for Better Fusion: A Controllable Visual Enhancer based on Cross-modal Conditional Adversarial Learning</td>
+            <td>CVPR '24</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Dispel_Darkness_for_Better_Fusion_A_Controllable_Visual_Enhancer_based_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/HaoZhang1018/DDBF">Code</a></td>
+        </tr>
         <tr>
             <td>GAN</td>
-            <td>DCFusion</td>
-            <td>DCFusion: A Dual-Frequency Cross-Enhanced Fusion Network for Infrared and Visible Image Fusion</td>
-            <td>TIM '23</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/10102546">Paper</a></td>
+            <td>CCF</td>
+            <td>Conditional Controllable Image Fusion</td>
+            <td>NeurIPS '24</td>
+            <td><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d99e8e80a6c41e148db686918dd7eab3-Paper-Conference.pdf">Paper</a>/<a href="https://github.com/jehovahxu/CCF">Code</a></td>
         </tr>
         <tr>
             <td>GAN</td>
@@ -352,20 +374,6 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>TCSVT '24</td>
             <td><a href="https://ieeexplore.ieee.org/abstract/document/10680110/">Paper</a>/<a href="https://github.com/Zhishe-Wang/FreqGAN">Code</a></td>
         </tr>
-     <tr>
-        <td>GAN</td>
-        <td>DDBF</td>
-        <td>Dispel Darkness for Better Fusion: A Controllable Visual Enhancer based on Cross-modal Conditional Adversarial Learning</td>
-        <td>CVPR '24</td>
-        <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Dispel_Darkness_for_Better_Fusion_A_Controllable_Visual_Enhancer_based_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/HaoZhang1018/DDBF">Code</a></td>
-    </tr>
-    <tr>
-        <td>GAN</td>
-        <td>CCF</td>
-        <td>Conditional Controllable Image Fusion</td>
-        <td>NeurIPS '24</td>
-        <td><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/d99e8e80a6c41e148db686918dd7eab3-Paper-Conference.pdf">Paper</a>/<a href="https://github.com/jehovahxu/CCF">Code</a></td>
-    </tr>
         <tr>
             <td>CNN</td>
             <td>BIMDL</td>
@@ -410,17 +418,10 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>CNN</td>
-            <td>Dif-Fusion</td>
-            <td>Dif-fusion: Towards high color fidelity in infrared and visible image fusion with diffusion models</td>
-            <td>TIP '23</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/10286359/">Paper</a>/<a href="https://github.com/GeoVectorMatrix/Dif-Fusion">Code</a></td>
-        </tr>
-        <tr>
-            <td>CNN</td>
-            <td>L2Net</td>
-            <td>L2Net: Infrared and Visible Image Fusion Using Lightweight Large Kernel Convolution Network</td>
-            <td>TIP '23</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/10301581">Paper</a>/<a href="https://github.com/chang-le-11/L2Net">Code</a></td>
+            <td>MetaFusion</td>
+            <td>Metafusion: Infrared and visible image fusion via meta-feature embedding from object detection</td>
+            <td>CVPR '23</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_MetaFusion_Infrared_and_Visible_Image_Fusion_via_Meta-Feature_Embedding_From_CVPR_2023_paper.html">Paper</a>/<a href="https://github.com/wdzhao123/MetaFusion">Code</a></td>
         </tr>
         <tr>
             <td>CNN</td>
@@ -438,10 +439,17 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>CNN</td>
-            <td>MetaFusion</td>
-            <td>Metafusion: Infrared and visible image fusion via meta-feature embedding from object detection</td>
-            <td>CVPR '23</td>
-            <td><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zhao_MetaFusion_Infrared_and_Visible_Image_Fusion_via_Meta-Feature_Embedding_From_CVPR_2023_paper.html">Paper</a>/<a href="https://github.com/wdzhao123/MetaFusion">Code</a></td>
+            <td>Dif-Fusion</td>
+            <td>Dif-fusion: Towards high color fidelity in infrared and visible image fusion with diffusion models</td>
+            <td>TIP '23</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/10286359/">Paper</a>/<a href="https://github.com/GeoVectorMatrix/Dif-Fusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>CNN</td>
+            <td>L2Net</td>
+            <td>L2Net: Infrared and Visible Image Fusion Using Lightweight Large Kernel Convolution Network</td>
+            <td>TIP '23</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/10301581">Paper</a>/<a href="https://github.com/chang-le-11/L2Net">Code</a></td>
         </tr>
         <tr>
             <td>CNN</td>
@@ -450,20 +458,48 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>InfFus '23</td>
             <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253523001860">Paper</a>/<a href="https://github.com/Linfeng-Tang/PSFusion">Code</a></td>
         </tr>
-         <tr>
-        <td>CNN</td>
-        <td>LUT-Fuse</td>
-        <td>LUT-Fuse: Towards Extremely Fast Infrared and Visible Image Fusion via Distillation to Learnable Look-Up Tables</td>
-        <td>ICCV '25</td>
-        <td><a href="https://arxiv.org/abs/2509.00346">Paper</a>/<a href="https://github.com/zyb5/LUT-Fuse">Code</a></td>
-    </tr>
         <tr>
-        <td>CNN</td>
-        <td>PMAINet</td>
-        <td>Progressive Modality-Adaptive Interactive Network for Multi-Modality Image Fusion</td>
-        <td>IJCAI '25</td>
-        <td><a href="https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/1791.pdf">Paper</a></td>
-    </tr>
+            <td>CNN</td>
+            <td>LUT-Fuse</td>
+            <td>LUT-Fuse: Towards Extremely Fast Infrared and Visible Image Fusion via Distillation to Learnable Look-Up Tables</td>
+            <td>ICCV '25</td>
+            <td><a href="https://arxiv.org/abs/2509.00346">Paper</a>/<a href="https://github.com/zyb5/LUT-Fuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>CNN</td>
+            <td>PMAINet</td>
+            <td>Progressive Modality-Adaptive Interactive Network for Multi-Modality Image Fusion</td>
+            <td>IJCAI '25</td>
+            <td><a href="https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/1791.pdf">Paper</a></td>
+        </tr>
+        <tr>
+            <td>CNN / Attention</td>
+            <td>SMLNet</td>
+            <td>SMLNet: A SPD Manifold Learning Network for Infrared and Visible Image Fusion</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-025-02578-1">Paper</a></td>
+        </tr>
+        <tr>
+            <td>CNN / Attention</td>
+            <td>RegionFuse</td>
+            <td>RegionFuse: Region-Adaptive Pixel Distribution Learning for Infrared and Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Xia_RegionFuse_Region-Adaptive_Pixel_Distribution_Learning_for_Infrared_and_Visible_Image_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/DarkIceField/RegionFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>CNN / Attention</td>
+            <td>Bimodal Neuron + DRF</td>
+            <td>Infrared and Visible Image Fusion Using Bimodal Neuron and Dynamic Receptive Field Mechanisms</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3689405">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Transformer</td>
+            <td>IFT</td>
+            <td>Image fusion transformer</td>
+            <td>ICIP '22</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/9897280">Paper</a>/<a href="https://github.com/Vibashan/Image-Fusion-Transformer">Code</a></td>
+        </tr>
         <tr>
             <td>Transformer</td>
             <td>SwinFusion</td>
@@ -477,13 +513,6 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>Ydtr: Infrared and visible image fusion via y-shape dynamic transformer</td>
             <td>TMM '22</td>
             <td><a href="https://ieeexplore.ieee.org/abstract/document/9834137">Paper</a>/<a href="https://github.com/tthinking/YDTR">Code</a></td>
-        </tr>
-        <tr>
-            <td>Transformer</td>
-            <td>IFT</td>
-            <td>Image fusion transformer</td>
-            <td>ICIP '22</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/9897280">Paper</a>/<a href="https://github.com/Vibashan/Image-Fusion-Transformer">Code</a></td>
         </tr>
         <tr>
             <td>Transformer</td>
@@ -515,6 +544,13 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Transformer</td>
+            <td>Fusion with Language-driven</td>
+            <td>Infrared and Visible Image Fusion with Language-Driven Loss in CLIP Embedding Space</td>
+            <td>ACM MM '24</td>
+            <td><a href="https://arxiv.org/abs/2402.16267">Paper</a>/<a href="null">Code</a></td>
+        </tr>
+        <tr>
+            <td>Transformer</td>
             <td>PromptF</td>
             <td>Promptfusion: Harmonized semantic prompt learning for infrared and visible image fusion</td>
             <td>JAS '24</td>
@@ -527,13 +563,62 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>TIP '25</td>
             <td><a href="https://arxiv.org/pdf/2404.11016">Paper</a>/<a href="https://github.com/Henry-Lee-real/MaeFuse">Code</a></td>
         </tr>
-    <tr>
-        <td>Transformer</td>
-        <td>Fusion with Language-driven</td>
-        <td>Infrared and Visible Image Fusion with Language-Driven Loss in CLIP Embedding Space</td>
-        <td>ACM MM '24</td>
-        <td><a href="https://arxiv.org/abs/2402.16267">Paper</a>/<a href="null">Code</a></td>
-    </tr>
+        <tr>
+            <td>Mamba / SSM</td>
+            <td>SFMFusion</td>
+            <td>Spatial-Frequency Enhanced Mamba for Multi-Modal Image Fusion</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3632221">Paper</a>/<a href="https://github.com/SunHui1216/SFMFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Mamba / SSM</td>
+            <td>ISFM</td>
+            <td>Interactive Spatial-Frequency Fusion Mamba for Multi-Modal Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3662596">Paper</a>/<a href="https://github.com/Namn23/ISFM">Code</a></td>
+        </tr>
+        <tr>
+            <td>Diffusion / Flow</td>
+            <td>FusionINV</td>
+            <td>FusionINV: A Diffusion-Based Approach for Multimodal Image Fusion</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3593775">Paper</a>/<a href="https://github.com/erfect2020/FusionINV">Code</a></td>
+        </tr>
+        <tr>
+            <td>Diffusion / Flow</td>
+            <td>DRFusion</td>
+            <td>Degradation-Robust Fusion: An Efficient Degradation-Aware Diffusion Framework for Multimodal Image Fusion in Arbitrary Degradation Scenarios</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Shi_Degradation-Robust_Fusion_An_Efficient_Degradation-Aware_Diffusion_Framework_for_Multimodal_Image_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/YShi-cool/DRFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Diffusion / Flow</td>
+            <td>ReCoFuse</td>
+            <td>ReCoFuse: Ultra-Robust Image Fusion via Restorative Multi-Modal Diffusion Reciprocal Coupling</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_ReCoFuse_Ultra-Robust_Image_Fusion_via_Restorative_Multi-Modal_Diffusion_Reciprocal_Coupling_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/HaoZhang1018/ReCoFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>Diffusion / Flow</td>
+            <td>P²Fusion</td>
+            <td>P2Fusion: Prompt-based Progressive Infrared-Visible Image Fusion via Dual-Prior Distillation</td>
+            <td>ECCV '26 (accepted)</td>
+            <td><a href="https://arxiv.org/abs/2608.13045">Paper</a>/<a href="https://github.com/YiShi99/P2Fusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Diffusion / Flow</td>
+            <td>DDIF</td>
+            <td>Detection Drives an End-to-End Fusion of Infrared and Visible Images Based on Diffusion Models</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3671618">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Evolutionary</td>
+            <td>EvoFuse</td>
+            <td>Symbiotic Evolutionary Learning for Task-Adaptive Infrared and Visible Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3722665">Paper</a></td>
+        </tr>
     </tbody>
 </table>
 
@@ -565,13 +650,6 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Registration</td>
-            <td>SuperFusion</td>
-            <td>Superfusion: A versatile image registration and fusion network with semantic awareness</td>
-            <td>JAS ‘22</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/9970457">Paper</a>/<a href="https://github.com/Linfeng-Tang/SuperFusion">Code</a></td>
-        </tr>
-        <tr>
-            <td>Registration</td>
             <td>UMFusion</td>
             <td>Unsupervised misaligned infrared and visible image fusion via cross-modality image generation and registration</td>
             <td>IJCAI ‘22</td>
@@ -579,10 +657,10 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Registration</td>
-            <td>GCRF</td>
-            <td>General cross-modality registration framework for visible and infrared UAV target image registration</td>
-            <td>SR ‘23</td>
-            <td><a href="https://www.nature.com/articles/s41598-023-39863-3">Paper</a></td>
+            <td>SuperFusion</td>
+            <td>Superfusion: A versatile image registration and fusion network with semantic awareness</td>
+            <td>JAS ‘22</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/9970457">Paper</a>/<a href="https://github.com/Linfeng-Tang/SuperFusion">Code</a></td>
         </tr>
         <tr>
             <td>Registration</td>
@@ -593,6 +671,20 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Registration</td>
+            <td>-</td>
+            <td>A Deep Learning Framework for Infrared and Visible Image Fusion Without Strict Registration</td>
+            <td>IJCV ‘23</td>
+            <td><a href="https://link.springer.com/article/10.1007/s11263-023-01948-x">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>GCRF</td>
+            <td>General cross-modality registration framework for visible and infrared UAV target image registration</td>
+            <td>SR ‘23</td>
+            <td><a href="https://www.nature.com/articles/s41598-023-39863-3">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
             <td>SemLA</td>
             <td>Semantics lead all: Towards unified image registration and fusion from a semantic perspective</td>
             <td>InfFus ‘23</td>
@@ -600,10 +692,31 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Registration</td>
-            <td>-</td>
-            <td>A Deep Learning Framework for Infrared and Visible Image Fusion Without Strict Registration</td>
-            <td>IJCV ‘23</td>
-            <td><a href="https://link.springer.com/article/10.1007/s11263-023-01948-x">Paper</a></td>
+            <td>C2RF</td>
+            <td>C2RF: Bridging Multi-modal Image Registration and Fusion via Commonality Mining and Contrastive Learning</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-025-02427-1">Paper</a>/<a href="https://github.com/Linfeng-Tang/C2RF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>FusionRegister</td>
+            <td>FusionRegister: Every Infrared and Visible Image Fusion Deserves Registration</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Bian_FusionRegister_Every_Infrared_and_Visible_Image_Fusion_Deserves_Registration_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/bociic/FusionRegister">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>URMIF</td>
+            <td>Universal Representation for Real-World Misaligned Infrared-Visible Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3720312">Paper</a>/<a href="https://github.com/ZengxiZhang/URMIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>Hy-CycleAlign</td>
+            <td>Hyperbolic Cycle Alignment for Infrared-Visible Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3707762">Paper</a></td>
         </tr>
         <tr>
             <td>Attack</td>
@@ -613,18 +726,109 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td><a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611928">Paper</a>/<a href="https://github.com/LiuZhu-CV/PAIF">Code</a></td>
         </tr>
         <tr>
+            <td>Robustness</td>
+            <td>UMCFuse</td>
+            <td>UMCFuse: A Unified Multiple Complex Scenes Infrared and Visible Image Fusion Framework</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3607623">Paper</a>/<a href="https://github.com/ixilai/UMCFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>Robustness</td>
+            <td>DCMIF</td>
+            <td>Missing No More: Dictionary-Guided Cross-Modal Image Fusion under Missing Infrared</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Missing_No_More_Dictionary-Guided_Cross-Modal_Image_Fusion_under_Missing_Infrared_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/harukiv/DCMIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Robustness</td>
+            <td>LaRA-Fusion</td>
+            <td>LaRA-Fusion: Latent-Robust Adaptation via Dual-Loop Constraints for Infrared and Visible Image Fusion</td>
+            <td>ICML '26</td>
+            <td><a href="https://openreview.net/forum?id=u6UnapBLWr">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Robustness</td>
+            <td>GText-IF</td>
+            <td>Leveraging Text-Driven Semantics for Degradation-Aware Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3722579">Paper</a>/<a href="https://github.com/XunpengYi/GText-IF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Robustness</td>
+            <td>DSPFusion</td>
+            <td>Image Fusion via Degradation and Semantic Dual-Prior Guidance</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3700938">Paper</a>/<a href="https://github.com/Linfeng-Tang/DSPFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Robustness</td>
+            <td>STAFuse</td>
+            <td>STAFuse: Scene-Text Aggregation-Guided Composite Degradation-Robust Infrared and Visible Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3719466">Paper</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>FusionBooster</td>
+            <td>FusionBooster: A Unified Image Fusion Boosting Paradigm</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-024-02266-6">Paper</a>/<a href="https://github.com/AWCXV/FusionBooster">Code</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>APTP</td>
+            <td>Beyond Strict Pairing: Arbitrarily Paired Training for High-Performance Infrared and Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Deng_Beyond_Strict_Pairing_Arbitrarily_Paired_Training_for_High-Performance_Infrared_and_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/yanglinDeng/IVIF_unpair">Code</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>CFI</td>
+            <td>Multi-Modal Image Fusion via Intervention-Stable Feature Learning</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Multi-Modal_Image_Fusion_via_Intervention-Stable_Feature_Learning_CVPR_2026_paper.html">Paper</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>DECC</td>
+            <td>More Than Meets the Eye: A Unified Image Fusion Framework via Semantic-Pixel Entropy Trade-off for Zero-Shot Generalization</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_More_Than_Meets_the_Eye_A_Unified_Image_Fusion_Framework_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/XiaoW-Liu/DECC">Code</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>1D-Fusion</td>
+            <td>From 2D Grids to 1D Tokens: Reforming Shared Representations for Multimodal Image Fusion</td>
+            <td>ICML '26</td>
+            <td><a href="https://arxiv.org/abs/2606.12303">Paper</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>IDEAL</td>
+            <td>Difference-Aware Decision Learning for Multimodal Image Fusion</td>
+            <td>ICML '26</td>
+            <td><a href="https://openreview.net/forum?id=j4E6NstJR4">Paper</a>/<a href="https://github.com/Pon915/IDEAL-main">Code</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>CDTFusion</td>
+            <td>Crossing Domain and Task for Infrared and Visible Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2025.3614704">Paper</a>/<a href="https://github.com/wangwenbo26/CDTFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>General / Unified</td>
+            <td>Gradient Transfer + FR Unfolding</td>
+            <td>A General Image Fusion Approach Exploiting Gradient Transfer Learning and Fusion Rule Unfolding</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3655694">Paper</a></td>
+        </tr>
+        <tr>
             <td>General</td>
             <td>FusionDN</td>
             <td>FusionDN: A unified densely connected network for image fusion</td>
             <td>AAAI ‘20</td>
             <td><a href="https://aaai.org/ojs/index.php/AAAI/article/view/6936">Paper</a>/<a href="https://github.com/hanna-xu/FusionDN">Code</a></td>
-        </tr>
-        <tr>
-            <td>General</td>
-            <td>IFCNN</td>
-            <td>IFCNN: A general image fusion framework based on convolutional neural network</td>
-            <td>InfFus ‘20</td>
-            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253518305505">Paper</a>/<a href="https://github.com/uzeful/IFCNN">Code</a></td>
         </tr>
         <tr>
             <td>General</td>
@@ -642,17 +846,17 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>General</td>
+            <td>IFCNN</td>
+            <td>IFCNN: A general image fusion framework based on convolutional neural network</td>
+            <td>InfFus ‘20</td>
+            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253518305505">Paper</a>/<a href="https://github.com/uzeful/IFCNN">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
             <td>SDNet</td>
             <td>SDNet: A versatile squeeze-and-decomposition network for real-time image fusion</td>
             <td>IJCV ‘21</td>
             <td><a href="https://link.springer.com/article/10.1007/s11263-021-01501-8">Paper</a>/<a href="https://github.com/HaoZhang1018/SDNet">Code</a></td>
-        </tr>
-        <tr>
-            <td>General</td>
-            <td>CoCoNet</td>
-            <td>CoCoNet: Coupled contrastive learning network with multi-level feature ensemble for multi-modality image fusion</td>
-            <td>IJCV ‘23</td>
-            <td><a href="https://link.springer.com/article/10.1007/s11263-023-01952-1">Paper</a>/<a href="https://github.com/runjia0124/CoCoNet">Code</a></td>
         </tr>
         <tr>
             <td>General</td>
@@ -663,10 +867,31 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>General</td>
+            <td>CoCoNet</td>
+            <td>CoCoNet: Coupled contrastive learning network with multi-level feature ensemble for multi-modality image fusion</td>
+            <td>IJCV ‘23</td>
+            <td><a href="https://link.springer.com/article/10.1007/s11263-023-01952-1">Paper</a>/<a href="https://github.com/runjia0124/CoCoNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
             <td>EMMA</td>
             <td>Equivariant multi-modality image fusion</td>
             <td>CVPR ‘24</td>
             <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_Equivariant_Multi-Modality_Image_Fusion_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/Zhaozixiang1228/MMIF-EMMA">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>SHIP</td>
+            <td>Probing Synergistic High-Order Interaction in Infrared and Visible Image Fusion</td>
+            <td>CVPR '24</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zheng_Probing_Synergistic_High-Order_Interaction_in_Infrared_and_Visible_Image_Fusion_CVPR_2024_paper.pdf">Paper</a>/<a href="https://github.com/zheng980629/SHIP">Code</a></td>
+        </tr>
+        <tr>
+            <td>General</td>
+            <td>TC-MoA</td>
+            <td>Task-Customized Mixture of Adapters for General Image Fusion</td>
+            <td>CVPR '24</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhu_Task-Customized_Mixture_of_Adapters_for_General_Image_Fusion_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/YangSun22/TC-MoA">Code</a></td>
         </tr>
         <tr>
             <td>General</td>
@@ -682,27 +907,48 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>TIP ‘24</td>
             <td><a href="https://ieeexplore.ieee.org/abstract/document/10794610">Paper</a>/<a href="https://github.com/yuliu316316/VDMUFusion">Code</a></td>
         </tr>
-             <tr>
-           <td>General</td>
-           <td>TC-MoA</td>
-           <td>Task-Customized Mixture of Adapters for General Image Fusion</td>
-           <td>CVPR '24</td>
-           <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhu_Task-Customized_Mixture_of_Adapters_for_General_Image_Fusion_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/YangSun22/TC-MoA">Code</a></td>
+        <tr>
+            <td>General</td>
+            <td>BLFusion</td>
+            <td>Breaking Low-Light Fusion Barrier: Unsupervised Darkness and Noise-Aware Visible and Infrared Image Fusion Network</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3713440">Paper</a>/<a href="https://github.com/ChenDoubleJ/BLFusion-MRLL">Code</a></td>
         </tr>
         <tr>
-           <td>General</td>
-           <td>SHIP</td>
-           <td>Probing Synergistic High-Order Interaction in Infrared and Visible Image Fusion</td>
-           <td>CVPR '24</td>
-           <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zheng_Probing_Synergistic_High-Order_Interaction_in_Infrared_and_Visible_Image_Fusion_CVPR_2024_paper.pdf">Paper</a>/<a href="https://github.com/zheng980629/SHIP">Code</a></td>
+            <td>General</td>
+            <td>DRDFNet</td>
+            <td>DRDFNet: A Degradation-Aware Restoration and Detail-Preserving Fusion Network for Infrared and Visible Image</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3700927">Paper</a>/<a href="https://github.com/Liupeng97/DRDFNet">Code</a></td>
         </tr>
-              <tr>
-        <td>Transformer</td>
-        <td>GIFNet</td>
-        <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
-        <td>CVPR '25</td>
-        <td><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Cheng_One_Model_for_ALL_Low-Level_Task_Interaction_Is_a_Key_CVPR_2025_paper.html">Paper</a>/<a href="https://github.com/AWCXV/GIFNet">Code</a></td>
-    </tr>
+        <tr>
+            <td>General</td>
+            <td>MDbFusion++</td>
+            <td>MDbFusion++: A Visible and Infrared Image Fusion Framework Capable for Motion Deblurring</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3678747">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Adverse Weather</td>
+            <td>AMG-Fuse</td>
+            <td>Multi-modality Image Fusion under Adverse Weather: Mask-Guided Feature Restoration and Interaction</td>
+            <td>ECCV '26 (accepted)</td>
+            <td><a href="https://arxiv.org/abs/2606.26812">Paper</a>/<a href="https://github.com/ixilai/AMG-Fuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>Adverse Weather</td>
+            <td>AWM-Fuse</td>
+            <td>AWM-Fuse: Multi-Modality Image Fusion for Adverse Weather via Global and Local Text Perception</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3690324">Paper</a>/<a href="https://github.com/Feecuin/AWM-Fuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>Transformer</td>
+            <td>GIFNet</td>
+            <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
+            <td>CVPR '25</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Cheng_One_Model_for_ALL_Low-Level_Task_Interaction_Is_a_Key_CVPR_2025_paper.html">Paper</a>/<a href="https://github.com/AWCXV/GIFNet">Code</a></td>
+        </tr>
     </tbody>
 </table>
 
@@ -720,6 +966,13 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
     <tbody>
         <tr>
             <td>Perception</td>
+            <td>TarDAL</td>
+            <td>Target-aware dual adversarial learning and a multi-scenario multimodality benchmark to fuse infrared and visible for object detection</td>
+            <td>CVPR ‘22</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Target-Aware_Dual_Adversarial_Learning_and_a_Multi-Scenario_Multi-Modality_Benchmark_To_CVPR_2022_paper.html">Paper</a>/<a href="https://github.com/dlut-dimt/TarDAL">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
             <td>DetFusion</td>
             <td>A detection-driven infrared and visible image fusion network</td>
             <td>ACMMM ‘22</td>
@@ -731,27 +984,6 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>Image fusion in the loop of high-level vision tasks: A semantic-aware real-time infrared and visible image fusion network</td>
             <td>InfFus ‘22</td>
             <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253521002542">Paper</a>/<a href="https://github.com/Linfeng-Tang/SeAFusion">Code</a></td>
-        </tr>
-        <tr>
-            <td>Perception</td>
-            <td>TarDAL</td>
-            <td>Target-aware dual adversarial learning and a multi-scenario multimodality benchmark to fuse infrared and visible for object detection</td>
-            <td>CVPR ‘22</td>
-            <td><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Target-Aware_Dual_Adversarial_Learning_and_a_Multi-Scenario_Multi-Modality_Benchmark_To_CVPR_2022_paper.html">Paper</a>/<a href="https://github.com/dlut-dimt/TarDAL">Code</a></td>
-        </tr>
-        <tr>
-            <td>Perception</td>
-            <td>BDLFusion</td>
-            <td>Bi-level dynamic learning for jointly multi-modality image fusion and beyond</td>
-            <td>IJCAI ‘23</td>
-            <td><a href="https://arxiv.org/abs/2305.06720">Paper</a>/<a href="https://github.com/LiuZhu-CV/BDLFusion">Code</a></td>
-        </tr>
-        <tr>
-            <td>Perception</td>
-            <td>IRFS</td>
-            <td>An interactively reinforced paradigm for joint infrared-visible image fusion and saliency object detection</td>
-            <td>InfFus ‘23</td>
-            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253523001446">Paper</a>/<a href="https://github.com/wdhudiekou/IRFS">Code</a></td>
         </tr>
         <tr>
             <td>Perception</td>
@@ -776,10 +1008,24 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Perception</td>
-            <td>CAF</td>
-            <td>Where elegance meets precision: Towards a compact, automatic, and flexible framework for multi-modality image fusion and applications</td>
-            <td>IJCAI ‘24</td>
-            <td><a href="https://www.ijcai.org/proceedings/2024/0123.pdf">Paper</a>/<a href="https://github.com/RollingPlain/CAF_IVIF">Code</a></td>
+            <td>BDLFusion</td>
+            <td>Bi-level dynamic learning for jointly multi-modality image fusion and beyond</td>
+            <td>IJCAI ‘23</td>
+            <td><a href="https://arxiv.org/abs/2305.06720">Paper</a>/<a href="https://github.com/LiuZhu-CV/BDLFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>IRFS</td>
+            <td>An interactively reinforced paradigm for joint infrared-visible image fusion and saliency object detection</td>
+            <td>InfFus ‘23</td>
+            <td><a href="https://www.sciencedirect.com/science/article/pii/S1566253523001446">Paper</a>/<a href="https://github.com/wdhudiekou/IRFS">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>EVIF</td>
+            <td>Event-based Visible and Infrared Fusion via Multi-task Collaboration</td>
+            <td>CVPR ‘24</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Geng_Event-based_Visible_and_Infrared_Fusion_via_Multi-task_Collaboration_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/NetaPanda/EVIF">Code</a></td>
         </tr>
         <tr>
             <td>Perception</td>
@@ -790,6 +1036,13 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Perception</td>
+            <td>CAF</td>
+            <td>Where elegance meets precision: Towards a compact, automatic, and flexible framework for multi-modality image fusion and applications</td>
+            <td>IJCAI ‘24</td>
+            <td><a href="https://www.ijcai.org/proceedings/2024/0123.pdf">Paper</a>/<a href="https://github.com/RollingPlain/CAF_IVIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
             <td>TIMFusion</td>
             <td>A task-guided, implicitly searched and meta-initialized deep model for image fusion</td>
             <td>TPAMI ‘24</td>
@@ -797,17 +1050,17 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Perception</td>
-            <td>SAGE</td>
-            <td>Every SAM Drop Counts: Embracing Semantic Priors for Multi-Modality Image Fusion and Beyond</td>
-            <td>CVPR ‘25</td>
-            <td><a href="https://arxiv.org/pdf/2503.01210">Paper</a>/<a href="https://github.com/RollingPlain/SAGE_IVIF">Code</a></td>
-        </tr>
-             <tr>
-            <td>Perception</td>
             <td>DCEvo</td>
             <td>DCEvo: Discriminative Cross-Dimensional Evolutionary Learning for Infrared and Visible Image Fusion</td>
             <td>CVPR ‘25</td>
             <td><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Liu_DCEvo_Discriminative_Cross-Dimensional_Evolutionary_Learning_for_Infrared_and_Visible_Image_CVPR_2025_paper.html">Paper</a>/<a href="https://github.com/Beate-Suy-Zhang/DCEvo">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>SAGE</td>
+            <td>Every SAM Drop Counts: Embracing Semantic Priors for Multi-Modality Image Fusion and Beyond</td>
+            <td>CVPR ‘25</td>
+            <td><a href="https://arxiv.org/pdf/2503.01210">Paper</a>/<a href="https://github.com/RollingPlain/SAGE_IVIF">Code</a></td>
         </tr>
         <tr>
             <td>Perception</td>
@@ -818,24 +1071,10 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Perception</td>
-            <td>EVIF</td>
-            <td>Event-based Visible and Infrared Fusion via Multi-task Collaboration </td>
-            <td>CVPR ‘24</td>
-            <td><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Geng_Event-based_Visible_and_Infrared_Fusion_via_Multi-task_Collaboration_CVPR_2024_paper.html">Paper</a>/<a href="https://github.com/NetaPanda/EVIF">Code</a></td>
-        </tr>
-        <tr>
-            <td>Perception</td>
             <td>MMAIF</td>
             <td>MMAIF: Multi-task and Multi-degradation All-in-One for Image Fusion with Language Guidance</td>
             <td>ICCV ‘25</td>
             <td><a href="https://arxiv.org/abs/2503.14944">Paper</a>/<a href="https://github.com/294coder/MMAIF">Code</a></td>
-        </tr>
-        <tr>
-            <td>Perception</td>
-            <td>CMFS</td>
-            <td>CMFS: CLIP-Guided Modality Interaction for Mitigating Noise in Multi-Modal Image Fusion and Segmentation</td>
-            <td>IJCAI ‘25</td>
-            <td><a href="https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/2440.pdf">Paper</a>/<a href="https://github.com/SuGuilin/IJCAI2025-CMFS">Code</a></td>
         </tr>
         <tr>
             <td>Perception</td>
@@ -846,32 +1085,137 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
         </tr>
         <tr>
             <td>Perception</td>
-            <td>SDSFusion</td>
-            <td>SDSFusion: A Semantic-Aware Infrared and Visible Image Fusion Network for Degraded Scenes</td>
-            <td>TIP ‘25</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/11014600">Paper</a>/<a href="https://github.com/Liling-yang/SDSFusion">Code</a></td>
-        </tr>        
-        <tr>
-            <td>Perception</td>
-            <td>S4Fusion</td>
-            <td>S4Fusion: Saliency-Aware Selective State Space Model for Infrared and Visible Image Fusion</td>
-            <td>TIP ‘25</td>
-            <td><a href="https://ieeexplore.ieee.org/document/11062462">Paper</a>/<a href="https://github.com/zipper112/S4Fusion">Code</a></td>
-        </tr>  
+            <td>CMFS</td>
+            <td>CMFS: CLIP-Guided Modality Interaction for Mitigating Noise in Multi-Modal Image Fusion and Segmentation</td>
+            <td>IJCAI ‘25</td>
+            <td><a href="https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/2440.pdf">Paper</a>/<a href="https://github.com/SuGuilin/IJCAI2025-CMFS">Code</a></td>
+        </tr>
         <tr>
             <td>Perception</td>
             <td>FreeFusion</td>
             <td>FreeFusion: Infrared and Visible Image Fusion via Cross Reconstruction Learning</td>
             <td>TPAMI ‘25</td>
             <td><a href="https://ieeexplore.ieee.org/abstract/document/11010882">Paper</a></td>
-        </tr>  
+        </tr>
         <tr>
             <td>Perception</td>
             <td>MulFS-CAP</td>
             <td>MulFS-CAP: Multimodal Fusion-Supervised Cross-Modality Alignment Perception for Unregistered Infrared-Visible Image Fusion</td>
             <td>TPAMI ‘25</td>
             <td><a href="https://ieeexplore.ieee.org/document/10856402">Paper</a>/<a href="https://github.com/YR0211/MulFS-CAP">Code</a></td>
-        </tr>  
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>S4Fusion</td>
+            <td>S4Fusion: Saliency-Aware Selective State Space Model for Infrared and Visible Image Fusion</td>
+            <td>TIP ‘25</td>
+            <td><a href="https://ieeexplore.ieee.org/document/11062462">Paper</a>/<a href="https://github.com/zipper112/S4Fusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>SDSFusion</td>
+            <td>SDSFusion: A Semantic-Aware Infrared and Visible Image Fusion Network for Degraded Scenes</td>
+            <td>TIP ‘25</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/11014600">Paper</a>/<a href="https://github.com/Liling-yang/SDSFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception</td>
+            <td>CID-DTPNet</td>
+            <td>A Color Information Driven Collaborative Training of Dual Task Parallel Network for Visible and Thermal Infrared Image Fusion and Saliency Object Detection</td>
+            <td>IJCV '26</td>
+            <td><a href="https://doi.org/10.1007/s11263-026-02793-4">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Perception / Task-driven</td>
+            <td>AMDANet</td>
+            <td>AMDANet: Attention-Driven Multi-Perspective Discrepancy Alignment for RGB-Infrared Image Fusion and Segmentation</td>
+            <td>ICCV '25</td>
+            <td><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Zhong_AMDANet_Attention-Driven_Multi-Perspective_Discrepancy_Alignment_for_RGB-Infrared_Image_Fusion_and_ICCV_2025_paper.html">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Perception / Task-driven</td>
+            <td>CLDyN</td>
+            <td>Customized Fusion: A Closed-Loop Dynamic Network for Adaptive Multi-Task-Aware Infrared-Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Customized_Fusion_A_Closed-Loop_Dynamic_Network_for_Adaptive_Multi-Task-Aware_Infrared-Visible_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/YR0211/CLDyN">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception / Task-driven</td>
+            <td>EVAFusion</td>
+            <td>Bridging Human Evaluation to Infrared and Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_Bridging_Human_Evaluation_to_Infrared_and_Visible_Image_Fusion_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/ALKA-Wind/EVAFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception / Task-driven</td>
+            <td>MultiTaskVIF</td>
+            <td>MultiTaskVIF: Segmentation-Oriented Visible and Infrared Image Fusion via Multi-Task Learning</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3710490">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Perception / Task-driven</td>
+            <td>SD-MoMFE</td>
+            <td>Less Is More: Infrared and Visible Images Fusion via Semantic-Guided Mixture of Multi-Feature Experts</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3675500">Paper</a>/<a href="https://github.com/ZhilongNiu/SD-MoMFE">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception / Task-driven</td>
+            <td>SSVIF</td>
+            <td>SSVIF: Self-Supervised Segmentation-Oriented Visible and Infrared Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3702404">Paper</a>/<a href="https://github.com/CnoyZ/SSVIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Perception / Task-driven</td>
+            <td>TPTAF</td>
+            <td>TPTAF: Task-Prior Tripartite Attention for Infrared and Visible Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3709518">Paper</a>/<a href="https://github.com/Duxeno/TPTAF">Code</a></td>
+        </tr>
+        <tr>
+            <td>Controllable / VLM</td>
+            <td>Bi-RWKV + MFM</td>
+            <td>An Efficient Image Fusion Network Exploiting Unifying Language and Mask Guidance</td>
+            <td>TPAMI '25</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2025.3591930">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Controllable / VLM</td>
+            <td>MTG-Fusion</td>
+            <td>Multi-Text Guidance Is Important: Multi-Modality Image Fusion via Large Generative Vision-Language Model</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-025-02409-3">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Controllable / VLM</td>
+            <td>TSANet</td>
+            <td>Text-Guided Semantic Alignment Network With Spatial-Frequency Interaction for Infrared-Visible Image Fusion Under Extreme Illumination</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3635048">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Controllable / VLM</td>
+            <td>DPOFusion</td>
+            <td>Fusion in Your Way: Aligning Image Fusion with Heterogeneous Demands via Direct Preference Optimization</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Su_Fusion_in_Your_Way_Aligning_Image_Fusion_with_Heterogeneous_Demands_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/suweijian1996/DPOFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Controllable / VLM</td>
+            <td>TEDFusion</td>
+            <td>Text-Driven Fusion for Infrared and Visible Images: Achieving Image Scene Adaptation on Hyperbolic Space</td>
+            <td>ICML '26</td>
+            <td><a href="https://arxiv.org/abs/2606.15104">Paper</a>/<a href="https://github.com/Shaoyun2023/TEDFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Efficiency</td>
+            <td>MobileFusion</td>
+            <td>MobileFusion: Mobile-Friendly Infrared and Visible Image Fusion via Structural Re-parameterization</td>
+            <td>ICML '26</td>
+            <td><a href="https://icml.cc/virtual/2026/poster/64502">Paper</a>/<a href="https://github.com/sucessfullys/MobileFusion">Code</a></td>
+        </tr>
     </tbody>
 </table>
 
@@ -889,16 +1233,298 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
     </thead>
     <tbody>
         <tr>
-            <td>SAGE</td>
-            <td>Every SAM Drop Counts: Embracing Semantic Priors for Multi-Modality Image Fusion and Beyond</td>
-            <td>CVPR ‘25</td>
-            <td><a href="https://arxiv.org/pdf/2503.01210">Paper</a>/<a href="https://github.com/RollingPlain/SAGE_IVIF">Code</a></td>
+            <td>APTP</td>
+            <td>Beyond Strict Pairing: Arbitrarily Paired Training for High-Performance Infrared and Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Deng_Beyond_Strict_Pairing_Arbitrarily_Paired_Training_for_High-Performance_Infrared_and_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/yanglinDeng/IVIF_unpair">Code</a></td>
         </tr>
-             <tr>
+        <tr>
+            <td>CFI</td>
+            <td>Multi-Modal Image Fusion via Intervention-Stable Feature Learning</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Multi-Modal_Image_Fusion_via_Intervention-Stable_Feature_Learning_CVPR_2026_paper.html">Paper</a></td>
+        </tr>
+        <tr>
+            <td>CLDyN</td>
+            <td>Customized Fusion: A Closed-Loop Dynamic Network for Adaptive Multi-Task-Aware Infrared-Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Customized_Fusion_A_Closed-Loop_Dynamic_Network_for_Adaptive_Multi-Task-Aware_Infrared-Visible_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/YR0211/CLDyN">Code</a></td>
+        </tr>
+        <tr>
+            <td>DCMIF</td>
+            <td>Missing No More: Dictionary-Guided Cross-Modal Image Fusion under Missing Infrared</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Missing_No_More_Dictionary-Guided_Cross-Modal_Image_Fusion_under_Missing_Infrared_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/harukiv/DCMIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>DECC</td>
+            <td>More Than Meets the Eye: A Unified Image Fusion Framework via Semantic-Pixel Entropy Trade-off for Zero-Shot Generalization</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_More_Than_Meets_the_Eye_A_Unified_Image_Fusion_Framework_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/XiaoW-Liu/DECC">Code</a></td>
+        </tr>
+        <tr>
+            <td>DPOFusion</td>
+            <td>Fusion in Your Way: Aligning Image Fusion with Heterogeneous Demands via Direct Preference Optimization</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Su_Fusion_in_Your_Way_Aligning_Image_Fusion_with_Heterogeneous_Demands_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/suweijian1996/DPOFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>DRFusion</td>
+            <td>Degradation-Robust Fusion: An Efficient Degradation-Aware Diffusion Framework for Multimodal Image Fusion in Arbitrary Degradation Scenarios</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Shi_Degradation-Robust_Fusion_An_Efficient_Degradation-Aware_Diffusion_Framework_for_Multimodal_Image_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/YShi-cool/DRFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>EVAFusion</td>
+            <td>Bridging Human Evaluation to Infrared and Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_Bridging_Human_Evaluation_to_Infrared_and_Visible_Image_Fusion_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/ALKA-Wind/EVAFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>FusionRegister</td>
+            <td>FusionRegister: Every Infrared and Visible Image Fusion Deserves Registration</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Bian_FusionRegister_Every_Infrared_and_Visible_Image_Fusion_Deserves_Registration_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/bociic/FusionRegister">Code</a></td>
+        </tr>
+        <tr>
+            <td>MagicFuse</td>
+            <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://arxiv.org/html/2602.01760v1">Paper</a></td>
+        </tr>
+        <tr>
+            <td>ReCoFuse</td>
+            <td>ReCoFuse: Ultra-Robust Image Fusion via Restorative Multi-Modal Diffusion Reciprocal Coupling</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_ReCoFuse_Ultra-Robust_Image_Fusion_via_Restorative_Multi-Modal_Diffusion_Reciprocal_Coupling_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/HaoZhang1018/ReCoFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>RegionFuse</td>
+            <td>RegionFuse: Region-Adaptive Pixel Distribution Learning for Infrared and Visible Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Xia_RegionFuse_Region-Adaptive_Pixel_Distribution_Learning_for_Infrared_and_Visible_Image_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/DarkIceField/RegionFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>UniFusion</td>
+            <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://arxiv.org/pdf/2603.14214">Paper</a>/<a href="https://github.com/dusongcheng/UniFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>AMG-Fuse</td>
+            <td>Multi-modality Image Fusion under Adverse Weather: Mask-Guided Feature Restoration and Interaction</td>
+            <td>ECCV '26 (accepted)</td>
+            <td><a href="https://arxiv.org/abs/2606.26812">Paper</a>/<a href="https://github.com/ixilai/AMG-Fuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>P²Fusion</td>
+            <td>P2Fusion: Prompt-based Progressive Infrared-Visible Image Fusion via Dual-Prior Distillation</td>
+            <td>ECCV '26 (accepted)</td>
+            <td><a href="https://arxiv.org/abs/2608.13045">Paper</a>/<a href="https://github.com/YiShi99/P2Fusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>1D-Fusion</td>
+            <td>From 2D Grids to 1D Tokens: Reforming Shared Representations for Multimodal Image Fusion</td>
+            <td>ICML '26</td>
+            <td><a href="https://arxiv.org/abs/2606.12303">Paper</a></td>
+        </tr>
+        <tr>
+            <td>IDEAL</td>
+            <td>Difference-Aware Decision Learning for Multimodal Image Fusion</td>
+            <td>ICML '26</td>
+            <td><a href="https://openreview.net/forum?id=j4E6NstJR4">Paper</a>/<a href="https://github.com/Pon915/IDEAL-main">Code</a></td>
+        </tr>
+        <tr>
+            <td>LaRA-Fusion</td>
+            <td>LaRA-Fusion: Latent-Robust Adaptation via Dual-Loop Constraints for Infrared and Visible Image Fusion</td>
+            <td>ICML '26</td>
+            <td><a href="https://openreview.net/forum?id=u6UnapBLWr">Paper</a></td>
+        </tr>
+        <tr>
+            <td>MobileFusion</td>
+            <td>MobileFusion: Mobile-Friendly Infrared and Visible Image Fusion via Structural Re-parameterization</td>
+            <td>ICML '26</td>
+            <td><a href="https://icml.cc/virtual/2026/poster/64502">Paper</a>/<a href="https://github.com/sucessfullys/MobileFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>TEDFusion</td>
+            <td>Text-Driven Fusion for Infrared and Visible Images: Achieving Image Scene Adaptation on Hyperbolic Space</td>
+            <td>ICML '26</td>
+            <td><a href="https://arxiv.org/abs/2606.15104">Paper</a>/<a href="https://github.com/Shaoyun2023/TEDFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>CtrlFuse</td>
+            <td>CtrlFuse: Mask-Prompt Guided Controllable Infrared and Visible Image Fusion</td>
+            <td>AAAI '26</td>
+            <td><a href="https://arxiv.org/pdf/2601.08619">Paper</a>/<a href="https://github.com/Sevryy/CtrlFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>DAFusion</td>
+            <td>Domain Adaptation Guided Infrared and Visible Image Fusion</td>
+            <td>AAAI '26</td>
+            <td><a href="https://doi.org/10.1609/aaai.v40i6.42435">Paper</a>/<a href="https://github.com/wellwhz/DAFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>HMMF</td>
+            <td>A Hybrid Space Model for Misaligned Multi-modality Image Fusion</td>
+            <td>AAAI '26</td>
+            <td><a href="https://openreview.net/attachment?id=Qwj8KZ45jL&name=pdf">Paper</a>/<a href="https://github.com/xiao-eee/HMMF">Code</a></td>
+        </tr>
+        <tr>
+            <td>MdaIF</td>
+            <td>MdaIF: Robust One-Stop Multi-Degradation-Aware Image Fusion with Language-Driven Semantics</td>
+            <td>AAAI '26</td>
+            <td><a href="https://arxiv.org/pdf/2511.12525">Paper</a>/<a href="https://github.com/doudou845133/MdaIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>SMC</td>
+            <td>Self-supervised Multiplex Consensus Mamba for General Image Fusion</td>
+            <td>AAAI '26</td>
+            <td><a href="https://arxiv.org/pdf/2512.20921">Paper</a></td>
+        </tr>
+        <tr>
+            <td>CDTFusion</td>
+            <td>Crossing Domain and Task for Infrared and Visible Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2025.3614704">Paper</a>/<a href="https://github.com/wangwenbo26/CDTFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>EvoFuse</td>
+            <td>Symbiotic Evolutionary Learning for Task-Adaptive Infrared and Visible Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3722665">Paper</a></td>
+        </tr>
+        <tr>
+            <td>Gradient Transfer + FR Unfolding</td>
+            <td>A General Image Fusion Approach Exploiting Gradient Transfer Learning and Fusion Rule Unfolding</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3655694">Paper</a></td>
+        </tr>
+        <tr>
+            <td>GText-IF</td>
+            <td>Leveraging Text-Driven Semantics for Degradation-Aware Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3722579">Paper</a>/<a href="https://github.com/XunpengYi/GText-IF">Code</a></td>
+        </tr>
+        <tr>
+            <td>URMIF</td>
+            <td>Universal Representation for Real-World Misaligned Infrared-Visible Image Fusion</td>
+            <td>TPAMI '26</td>
+            <td><a href="https://doi.org/10.1109/TPAMI.2026.3720312">Paper</a>/<a href="https://github.com/ZengxiZhang/URMIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>CID-DTPNet</td>
+            <td>A Color Information Driven Collaborative Training of Dual Task Parallel Network for Visible and Thermal Infrared Image Fusion and Saliency Object Detection</td>
+            <td>IJCV '26</td>
+            <td><a href="https://doi.org/10.1007/s11263-026-02793-4">Paper</a></td>
+        </tr>
+        <tr>
+            <td>AWM-Fuse</td>
+            <td>AWM-Fuse: Multi-Modality Image Fusion for Adverse Weather via Global and Local Text Perception</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3690324">Paper</a>/<a href="https://github.com/Feecuin/AWM-Fuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>Bimodal Neuron + DRF</td>
+            <td>Infrared and Visible Image Fusion Using Bimodal Neuron and Dynamic Receptive Field Mechanisms</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3689405">Paper</a></td>
+        </tr>
+        <tr>
+            <td>BLFusion</td>
+            <td>Breaking Low-Light Fusion Barrier: Unsupervised Darkness and Noise-Aware Visible and Infrared Image Fusion Network</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3713440">Paper</a>/<a href="https://github.com/ChenDoubleJ/BLFusion-MRLL">Code</a></td>
+        </tr>
+        <tr>
+            <td>DDIF</td>
+            <td>Detection Drives an End-to-End Fusion of Infrared and Visible Images Based on Diffusion Models</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3671618">Paper</a></td>
+        </tr>
+        <tr>
+            <td>DRDFNet</td>
+            <td>DRDFNet: A Degradation-Aware Restoration and Detail-Preserving Fusion Network for Infrared and Visible Image</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3700927">Paper</a>/<a href="https://github.com/Liupeng97/DRDFNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>DSPFusion</td>
+            <td>Image Fusion via Degradation and Semantic Dual-Prior Guidance</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3700938">Paper</a>/<a href="https://github.com/Linfeng-Tang/DSPFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>Hy-CycleAlign</td>
+            <td>Hyperbolic Cycle Alignment for Infrared-Visible Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3707762">Paper</a></td>
+        </tr>
+        <tr>
+            <td>ISFM</td>
+            <td>Interactive Spatial-Frequency Fusion Mamba for Multi-Modal Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3662596">Paper</a>/<a href="https://github.com/Namn23/ISFM">Code</a></td>
+        </tr>
+        <tr>
+            <td>MDbFusion++</td>
+            <td>MDbFusion++: A Visible and Infrared Image Fusion Framework Capable for Motion Deblurring</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3678747">Paper</a></td>
+        </tr>
+        <tr>
+            <td>MultiTaskVIF</td>
+            <td>MultiTaskVIF: Segmentation-Oriented Visible and Infrared Image Fusion via Multi-Task Learning</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3710490">Paper</a></td>
+        </tr>
+        <tr>
+            <td>SD-MoMFE</td>
+            <td>Less Is More: Infrared and Visible Images Fusion via Semantic-Guided Mixture of Multi-Feature Experts</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3675500">Paper</a>/<a href="https://github.com/ZhilongNiu/SD-MoMFE">Code</a></td>
+        </tr>
+        <tr>
+            <td>SSVIF</td>
+            <td>SSVIF: Self-Supervised Segmentation-Oriented Visible and Infrared Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3702404">Paper</a>/<a href="https://github.com/CnoyZ/SSVIF">Code</a></td>
+        </tr>
+        <tr>
+            <td>STAFuse</td>
+            <td>STAFuse: Scene-Text Aggregation-Guided Composite Degradation-Robust Infrared and Visible Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3719466">Paper</a></td>
+        </tr>
+        <tr>
+            <td>TPTAF</td>
+            <td>TPTAF: Task-Prior Tripartite Attention for Infrared and Visible Image Fusion</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3709518">Paper</a>/<a href="https://github.com/Duxeno/TPTAF">Code</a></td>
+        </tr>
+        <tr>
+            <td>FuseAgent</td>
+            <td>FUSEAGENT: A VLM-DRIVEN AGENT FOR UNIFIED IN-THE-WILD IMAGE FUSION</td>
+            <td>ICLR '26</td>
+            <td><a href="https://openreview.net/pdf?id=FUiOZXchu5">Paper</a>/<a href="https://github.com/Tyunsen/fuseAgent_v2/blob/main/docs/zh-CN/design/vision_index_creation.md">Code</a></td>
+        </tr>
+        <tr>
             <td>DCEvo</td>
             <td>DCEvo: Discriminative Cross-Dimensional Evolutionary Learning for Infrared and Visible Image Fusion</td>
             <td>CVPR ‘25</td>
             <td><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Liu_DCEvo_Discriminative_Cross-Dimensional_Evolutionary_Learning_for_Infrared_and_Visible_Image_CVPR_2025_paper.html">Paper</a>/<a href="https://github.com/Beate-Suy-Zhang/DCEvo">Code</a></td>
+        </tr>
+        <tr>
+            <td>GIFNet</td>
+            <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
+            <td>CVPR '25</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Cheng_One_Model_for_ALL_Low-Level_Task_Interaction_Is_a_Key_CVPR_2025_paper.html">Paper</a>/<a href="https://github.com/AWCXV/GIFNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>SAGE</td>
+            <td>Every SAM Drop Counts: Embracing Semantic Priors for Multi-Modality Image Fusion and Beyond</td>
+            <td>CVPR ‘25</td>
+            <td><a href="https://arxiv.org/pdf/2503.01210">Paper</a>/<a href="https://github.com/RollingPlain/SAGE_IVIF">Code</a></td>
         </tr>
         <tr>
             <td>TDFusion</td>
@@ -907,10 +1533,16 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Bai_Task-driven_Image_Fusion_with_Learnable_Fusion_Loss_CVPR_2025_paper.html">Paper</a>/<a href="https://github.com/HaowenBai/TDFusion">Code</a></td>
         </tr>
         <tr>
-            <td>GIFNet</td>
-            <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
-            <td>CVPR '25</td>
-            <td><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Cheng_One_Model_for_ALL_Low-Level_Task_Interaction_Is_a_Key_CVPR_2025_paper.html">Paper</a>/<a href="https://github.com/AWCXV/GIFNet">Code</a></td>
+            <td>AMDANet</td>
+            <td>AMDANet: Attention-Driven Multi-Perspective Discrepancy Alignment for RGB-Infrared Image Fusion and Segmentation</td>
+            <td>ICCV '25</td>
+            <td><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Zhong_AMDANet_Attention-Driven_Multi-Perspective_Discrepancy_Alignment_for_RGB-Infrared_Image_Fusion_and_ICCV_2025_paper.html">Paper</a></td>
+        </tr>
+        <tr>
+            <td>DreamFuse</td>
+            <td>DreamFuse: Adaptive Image Fusion with Diffusion Transformer</td>
+            <td>ICCV '25</td>
+            <td><a href="https://arxiv.org/pdf/2504.08291">Paper</a>/<a href="https://ll3rd.github.io/DreamFuse/">Code</a></td>
         </tr>
         <tr>
             <td>RIS-Fuse</td>
@@ -931,10 +1563,10 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Hu_Balancing_Task-invariant_Interaction_and_Task-specific_Adaptation_for_Unified_Image_Fusion_ICCV_2025_paper.pdf">Paper</a>/<a href="https://github.com/huxingyuabc/TITA">Code</a></td>
         </tr>
         <tr>
-            <td>DreamFuse</td>
-            <td>DreamFuse: Adaptive Image Fusion with Diffusion Transformer</td>
-            <td>ICCV '25</td>
-            <td><a href="https://arxiv.org/pdf/2504.08291">Paper</a>/<a href="https://ll3rd.github.io/DreamFuse/">Code</a></td>
+            <td>HRFusion</td>
+            <td>Prior-Constrained Relevant Feature driven Image Fusion with Hybrid Feature via Mode Decomposition</td>
+            <td>ACM MM '25</td>
+            <td><a href="https://dl.acm.org/doi/epdf/10.1145/3746027.3755343">Paper</a>/<a href="https://github.com/liuuuuu777/HRFusion">Code</a></td>
         </tr>
         <tr>
             <td>TRACE</td>
@@ -943,16 +1575,16 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td><a href="https://dl.acm.org/doi/epdf/10.1145/3746027.3755087">Paper</a>/<a href="https://github.com/pubyLu/TRACE">Code</a></td>
         </tr>
         <tr>
-            <td>HRFusion</td>
-            <td>Prior-Constrained Relevant Feature driven Image Fusion with Hybrid Feature via Mode Decomposition</td>
-            <td>ACM MM '25</td>
-            <td><a href="https://dl.acm.org/doi/epdf/10.1145/3746027.3755343">Paper</a>/<a href="https://github.com/liuuuuu777/HRFusion">Code</a></td>
-        </tr>
-        <tr>
             <td>TG-ECNet</td>
             <td>Task-Gated Multi-Expert Collaboration Network for Degraded Multi-Modal Image Fusion</td>
             <td>ICML '25</td>
             <td><a href="https://openreview.net/pdf?id=OcFsPBXREI">Paper</a>/<a href="https://github.com/LeeX54946/TG-ECNet">Code</a></td>
+        </tr>
+        <tr>
+            <td>ControlFusion</td>
+            <td>ControlFusion: A Controllable Image Fusion Framework with Language-Vision Degradation Prompts</td>
+            <td>NeurIPS '25</td>
+            <td><a href="https://openreview.net/pdf?id=aLhA7AYLLR">Paper</a>/<a href="https://github.com/Linfeng-Tang/ControlFusion">Code</a></td>
         </tr>
         <tr>
             <td>Deno-IF</td>
@@ -967,78 +1599,24 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td><a href="https://openreview.net/pdf?id=wvcYIEaD5X">Paper</a>/<a href="https://openreview.net/pdf?id=wvcYIEaD5X">Code</a></td>
         </tr>
         <tr>
-            <td>RFfusion</td>
-            <td>Efficient Rectified Flow for Image Fusion</td>
-            <td>NeurIPS '25</td>
-            <td><a href="https://arxiv.org/pdf/2509.16549">Paper</a>/<a href="https://github.com/zirui0625/RFfusion">Code</a></td>
-        </tr> 
-       <tr>
-            <td>ControlFusion</td>
-            <td>ControlFusion: A Controllable Image Fusion Framework with Language-Vision Degradation Prompts</td>
-            <td>NeurIPS '25</td>
-            <td><a href="https://openreview.net/pdf?id=aLhA7AYLLR">Paper</a>/<a href="https://github.com/Linfeng-Tang/ControlFusion">Code</a></td>
-        </tr>
-        <tr>
             <td>PDFuse</td>
             <td>Projection-Manifold Regularized Latent Diffusion for Robust General Image Fusion</td>
             <td>NeurIPS '25</td>
             <td><a href="https://openreview.net/pdf?id=RqE5PlQsU5">Paper</a>/<a href="https://github.com/Leiii-Cao/PDFuse">Code</a></td>
-        </tr>   
-       <tr>
-            <td>DAFusion</td>
-            <td>Domain Adaptation Guided Infrared and Visible Image Fusion</td>
-            <td>AAAI '26</td>
-            <td><a href="https://doi.org/10.1609/aaai.v40i6.42435">Paper</a>/<a href="https://github.com/wellwhz/DAFusion">Code</a></td>
         </tr>
         <tr>
-            <td>HMMF</td>
-            <td>A Hybrid Space Model for Misaligned Multi-modality Image Fusion</td>
-            <td>AAAI '26</td>
-            <td><a href="https://openreview.net/attachment?id=Qwj8KZ45jL&name=pdf">Paper</a>/<a href="https://github.com/xiao-eee/HMMF">Code</a></td>
-        </tr>   
-       <tr>
-            <td>CtrlFuse</td>
-            <td>CtrlFuse: Mask-Prompt Guided Controllable Infrared and Visible Image Fusion</td>
-            <td>AAAI '26</td>
-            <td><a href="https://arxiv.org/pdf/2601.08619">Paper</a>/<a href="https://github.com/Sevryy/CtrlFuse">Code</a></td>
+            <td>RFfusion</td>
+            <td>Efficient Rectified Flow for Image Fusion</td>
+            <td>NeurIPS '25</td>
+            <td><a href="https://arxiv.org/pdf/2509.16549">Paper</a>/<a href="https://github.com/zirui0625/RFfusion">Code</a></td>
         </tr>
         <tr>
-            <td>MdaIF</td>
-            <td>MdaIF: Robust One-Stop Multi-Degradation-Aware Image Fusion with Language-Driven Semantics</td>
-            <td>AAAI '26</td>
-            <td><a href="https://arxiv.org/pdf/2511.12525">Paper</a>/<a href="https://github.com/doudou845133/MdaIF">Code</a></td>
-        </tr>   
-       <tr>
-            <td>SMC</td>
-            <td>Self-supervised Multiplex Consensus Mamba for General Image Fusion</td>
-            <td>AAAI '26</td>
-            <td><a href="https://arxiv.org/pdf/2512.20921">Paper</a></td>
-        </tr>
-        <tr>
-            <td>OCCO</td>
-            <td>OCCO: LVM-Guided Infrared and Visible Image Fusion Framework Based on Object-Aware and Contextual Contrastive Learning</td>
-            <td>IJCV '25</td>
-            <td><a href="https://link.springer.com/content/pdf/10.1007/s11263-025-02507-2.pdf">Paper</a>/<a href="https://github.com/bociic/OCCO">Code</a></td>
-        </tr>   
-       <tr>
-            <td>MagicFuse</td>
-            <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
-            <td>CVPR '26</td>
-            <td><a href="https://arxiv.org/html/2602.01760v1">Paper</a></td>
-        </tr>
-        <tr>
-            <td>UniFusion</td>
-            <td>One Model for ALL: Low-Level Task Interaction Is a Key to Task-Agnostic Image Fusion</td>
-            <td>CVPR '26</td>
-            <td><a href="https://arxiv.org/pdf/2603.14214">Paper</a>/<a href="https://github.com/dusongcheng/UniFusion">Code</a></td>
-        </tr> 
-        <tr>
-            <td>OmniFuse</td>
-            <td>OmniFuse: Composite Degradation-Robust Image Fusion With Language-Driven Semantics</td>
+            <td>Bi-RWKV + MFM</td>
+            <td>An Efficient Image Fusion Network Exploiting Unifying Language and Mask Guidance</td>
             <td>TPAMI '25</td>
-            <td><a href="https://ieeexplore.ieee.org/abstract/document/10994384">Paper</a>/<a href="https://github.com/HaoZhang1018/OmniFuse">Code</a></td>
-        </tr>   
-       <tr>
+            <td><a href="https://doi.org/10.1109/TPAMI.2025.3591930">Paper</a></td>
+        </tr>
+        <tr>
             <td>DiTFuse</td>
             <td>Towards Uniffed Semantic and Controllable Image Fusion: A Diffusion Transformer Approach</td>
             <td>TPAMI '25</td>
@@ -1049,19 +1627,80 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>Mask-DiFuser: A Masked Diffusion Model for Unified Unsupervised Image Fusion</td>
             <td>TPAMI '25</td>
             <td><a href="https://ieeexplore.ieee.org/document/11162636">Paper</a>/<a href="https://github.com/Linfeng-Tang/Mask-DiFuser/blob/main/README.md">Code</a></td>
-        </tr>   
-       <tr>
-            <td>FuseAgent</td>
-            <td>FUSEAGENT: A VLM-DRIVEN AGENT FOR UNIFIED IN-THE-WILD IMAGE FUSION</td>
-            <td>ICLR '26</td>
-            <td><a href="https://openreview.net/pdf?id=FUiOZXchu5">Paper</a>/<a href="https://github.com/Tyunsen/fuseAgent_v2/blob/main/docs/zh-CN/design/vision_index_creation.md">Code</a></td>
+        </tr>
+        <tr>
+            <td>OmniFuse</td>
+            <td>OmniFuse: Composite Degradation-Robust Image Fusion With Language-Driven Semantics</td>
+            <td>TPAMI '25</td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/10994384">Paper</a>/<a href="https://github.com/HaoZhang1018/OmniFuse">Code</a></td>
+        </tr>
+        <tr>
+            <td>C2RF</td>
+            <td>C2RF: Bridging Multi-modal Image Registration and Fusion via Commonality Mining and Contrastive Learning</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-025-02427-1">Paper</a>/<a href="https://github.com/Linfeng-Tang/C2RF">Code</a></td>
+        </tr>
+        <tr>
+            <td>FusionBooster</td>
+            <td>FusionBooster: A Unified Image Fusion Boosting Paradigm</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-024-02266-6">Paper</a>/<a href="https://github.com/AWCXV/FusionBooster">Code</a></td>
+        </tr>
+        <tr>
+            <td>MTG-Fusion</td>
+            <td>Multi-Text Guidance Is Important: Multi-Modality Image Fusion via Large Generative Vision-Language Model</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-025-02409-3">Paper</a></td>
+        </tr>
+        <tr>
+            <td>OCCO</td>
+            <td>OCCO: LVM-Guided Infrared and Visible Image Fusion Framework Based on Object-Aware and Contextual Contrastive Learning</td>
+            <td>IJCV '25</td>
+            <td><a href="https://link.springer.com/content/pdf/10.1007/s11263-025-02507-2.pdf">Paper</a>/<a href="https://github.com/bociic/OCCO">Code</a></td>
+        </tr>
+        <tr>
+            <td>SMLNet</td>
+            <td>SMLNet: A SPD Manifold Learning Network for Infrared and Visible Image Fusion</td>
+            <td>IJCV '25</td>
+            <td><a href="https://doi.org/10.1007/s11263-025-02578-1">Paper</a></td>
+        </tr>
+        <tr>
+            <td>FusionINV</td>
+            <td>FusionINV: A Diffusion-Based Approach for Multimodal Image Fusion</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3593775">Paper</a>/<a href="https://github.com/erfect2020/FusionINV">Code</a></td>
+        </tr>
+        <tr>
+            <td>MAFS</td>
+            <td>MAFS: Masked Autoencoder for Infrared-Visible Image Fusion and Semantic Segmentation</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3611602">Paper</a>/<a href="https://github.com/Abraham-Einstein/MAFS">Code</a></td>
+        </tr>
+        <tr>
+            <td>SFMFusion</td>
+            <td>Spatial-Frequency Enhanced Mamba for Multi-Modal Image Fusion</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3632221">Paper</a>/<a href="https://github.com/SunHui1216/SFMFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>TSANet</td>
+            <td>Text-Guided Semantic Alignment Network With Spatial-Frequency Interaction for Infrared-Visible Image Fusion Under Extreme Illumination</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3635048">Paper</a></td>
+        </tr>
+        <tr>
+            <td>UMCFuse</td>
+            <td>UMCFuse: A Unified Multiple Complex Scenes Infrared and Visible Image Fusion Framework</td>
+            <td>TIP '25</td>
+            <td><a href="https://doi.org/10.1109/TIP.2025.3607623">Paper</a>/<a href="https://github.com/ixilai/UMCFuse">Code</a></td>
         </tr>
         <tr>
             <td>URFusion</td>
             <td>URFusion: Unsupervised Unified Degradation-Robust Image Fusion Network</td>
             <td>TIP '25</td>
             <td><a href="https://ieeexplore.ieee.org/document/11164897">Paper</a>/<a href="https://github.com/hanna-xu/URFusion">Code</a></td>
-        </tr>   
+        </tr>
+    </tbody>
 </table>
 
 # 视频融合(Video Fusion)
@@ -1076,24 +1715,42 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
     </thead>
     <tbody>
         <tr>
-            <td>UniVF</td>
-            <td>A Unified Solution to Video Fusion: FromMulti-Frame Learning to Benchmarking</td>
-            <td>NeurIPS '25</td>
-            <td><a href="https://arxiv.org/abs/2505.19858">Paper</a>/<a href="https://github.com/Zhaozixiang1228/VF-Bench">Code</a></td>
-        </tr>   
-       <tr>
-            <td>RCVS</td>
-            <td>RCVS: A Unified Registration and Fusion Framework for Video Streams</td>
-            <td>TMM '24</td>
-            <td><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10636834">Paper</a></td>
+            <td>SDMFusion</td>
+            <td>Streaming Diffusion Model for Fast Infrared and Visible Video Fusion</td>
+            <td>CVPR '26</td>
+            <td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Liu_Streaming_Diffusion_Model_for_Fast_Infrared_and_Visible_Video_Fusion_CVPR_2026_paper.html">Paper</a>/<a href="https://github.com/DandanYoung/SDMFusion">Code</a></td>
         </tr>
         <tr>
             <td>VideoFusion</td>
             <td>VideoFusion: A Spatio-Temporal Collaborative Network for Multi-modal Video Fusion</td>
             <td>CVPR '26</td>
             <td><a href="https://arxiv.org/pdf/2503.23359?">Paper</a>/<a href="https://github.com/Linfeng-Tang/VideoFusion">Code</a></td>
-        </tr>   
-       <tr>
+        </tr>
+        <tr>
+            <td>MAVFusion</td>
+            <td>MAVFusion: Efficient Infrared and Visible Video Fusion via Motion-Aware Sparse Interaction</td>
+            <td>ECCV '26</td>
+            <td><a href="https://arxiv.org/abs/2604.01958">Paper</a>/<a href="https://github.com/ixilai/MAVFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>One-step Diffusion</td>
+            <td>Degradation-Robust and Temporally Consistent Infrared-Visible Video Fusion via One-step Diffusion Framework</td>
+            <td>ECCV '26</td>
+            <td><a href="https://eccv.ecva.net/Conferences/2026/Videos">Paper</a></td>
+        </tr>
+        <tr>
+            <td>DRFusion</td>
+            <td>DRFusion: Drift-Resilient Temporally Consistent Infrared-Visible Video Fusion</td>
+            <td>ICML '26</td>
+            <td><a href="https://arxiv.org/abs/2605.25775">Paper</a>/<a href="https://github.com/xhhaoyan/DRFusion">Code</a></td>
+        </tr>
+        <tr>
+            <td>USCFNet</td>
+            <td>Uncertainty-Guided Spatiotemporal Consistency Fusion Network for Infrared-Visible Video Fusion Under Extremely Low-Light Conditions</td>
+            <td>TIP '26</td>
+            <td><a href="https://doi.org/10.1109/TIP.2026.3719477">Paper</a>/<a href="https://github.com/Zhaocheng1/ELVID">Code</a></td>
+        </tr>
+        <tr>
             <td>CMVF</td>
             <td>CMVF: Cross-modal unregistered video fusion via spatio-temporal consistency</td>
             <td>InfFus '26</td>
@@ -1104,13 +1761,26 @@ If the M<sup>3</sup>FD and FMB datasets are helpful to you, please cite the foll
             <td>Seq-IF: Sequentially Consistent Infrared-Visible Video Fusion under Time-Varying Illumination for Perception Enhancement</td>
             <td>TCSVT '26</td>
             <td><a href="https://ieeexplore.ieee.org/abstract/document/11417980">Paper</a></td>
-        </tr> 
+        </tr>
         <tr>
             <td>TemCoCo</td>
             <td>TemCoCo: Temporally Consistent Multi-modal Video Fusion with Visual-Semantic Collaboration</td>
             <td>ICCV '25</td>
             <td><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Gong_TemCoCo_Temporally_Consistent_Multi-modal_Video_Fusion_with_Visual-Semantic_Collaboration_ICCV_2025_paper.pdf">Paper</a>/<a href="https://github.com/Meiqi-Gong/TemCoCo">Code</a></td>
-        </tr>   
+        </tr>
+        <tr>
+            <td>UniVF</td>
+            <td>A Unified Solution to Video Fusion: FromMulti-Frame Learning to Benchmarking</td>
+            <td>NeurIPS '25</td>
+            <td><a href="https://arxiv.org/abs/2505.19858">Paper</a>/<a href="https://github.com/Zhaozixiang1228/VF-Bench">Code</a></td>
+        </tr>
+        <tr>
+            <td>RCVS</td>
+            <td>RCVS: A Unified Registration and Fusion Framework for Video Streams</td>
+            <td>TMM '24</td>
+            <td><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10636834">Paper</a></td>
+        </tr>
+    </tbody>
 </table>
 #  评价指标(Evaluation Metric)
 We integrated the code for calculating metrics and used GPU acceleration with PyTorch, significantly improving the speed of computing metrics across multiple methods and images.
